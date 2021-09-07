@@ -8,7 +8,7 @@ namespace gruppeProsjekt.Models
     public class Bestilling
     {
         public int antall { get; set; }
-        public Billett
+        public Billett billett { get; set; }
         public DateTime date { get; set; }
-
+    }
 }
