@@ -10,5 +10,6 @@ namespace gruppeProsjekt.Models
         public string strekning { get; set; }
 
         public double pris { get; set; }
+
     }
 }
