@@ -7,16 +7,50 @@ namespace gruppeProsjekt.Models
 {
     public class Bestilling
     {
-        public int antall { get; set; }
+        public Bestilling()
+        {
+        }
 
-        public Billett billett { get; set; }
+        public Bestilling(string fornavn, string etternavn, string epost, string telefon, DateTime avreiseDato)
+        {
+            this.fornavn = fornavn;
+            this.etternavn = etternavn;
+            this.epost = epost;
+            this.telefon = telefon;
+            this.avreiseDato = avreiseDato;
+        }
 
-        public DateTime date { get; set; }
+        public int id { get; set; }
+        public string fornavn { get; set; }
+        public string etternavn { get; set; }
+        public string epost { get; set; }
+        public string telefon { get; set; }
+        public DateTime avreiseDato { get; set; }
+        public virtual Strekning strekningID { get; set; }
+    }
 
-        public string navn { get; set; }
+    public class Bestill
+    {
+        public Bestill()
+        {
+        }
 
-        public string tlf { get; set; }
+        public Bestill(string fornavn, string etternavn, string epost, string telefon, DateTime avreiseDato, int strekningID)
+        {
+            this.fornavn = fornavn;
+            this.etternavn = etternavn;
+            this.epost = epost;
+            this.telefon = telefon;
+            this.avreiseDato = avreiseDato;
+            this.strekningID = strekningID;
+        }
 
-        public string adresse { get; set; }
+        public int id { get; set; }
+        public string fornavn { get; set; }
+        public string etternavn { get; set; }
+        public string epost { get; set; }
+        public string telefon { get; set; }
+        public DateTime avreiseDato { get; set; }
+        public virtual int strekningID { get; set; }
     }
 }
