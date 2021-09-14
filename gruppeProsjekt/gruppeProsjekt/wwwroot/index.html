@@ -11,26 +11,53 @@
             width: 60%;
             margin-top: 1em;
         }
+
+        .form-control {
+            margin-bottom: 0.5em;
+            width: 40%;
+        }
     </style>
 </head>
 <body>
     <h3>Bestill billett</h3>
-
-    <input type="radio" name="tur" />
-    <label>En vei</label>
-    <input type="radio" name="tur" />
-    <label>Tur/retur</label>
-
-    <select id="velgStrekning" class="form-control">
-    </select>
+    <form class="form-group" id="frmBestill">
+        <!-- Velg strekning -->
+        <h4>Strekning</h4>
+        <select id="velgStrekning" class="form-control"></select>
+        <!-- Velg avreisedato -->
+        <h4>Avreise</h4>
+        <input type="date" class="form-control" id="velgDato" required />
+        <!-- Kundeinfo -->
+        <h4>Kunde info</h4>
+        <input type="text" class="form-control" id="inpFornavn" placeholder="Fornavn" required />
+        <input type="text" class="form-control" id="inpEtternavn" placeholder="Etternavn" required />
+        <input type="email" class="form-control" id="inpEpost" placeholder="Epost" required />
+        <input type="tel" class="form-control" id="inpTelefon" placeholder="Telefon" required />
+        <button type="submit" class="btn btn-primary">Send bestilling</button>
+    </form>
 
     <script>
         $.get("Strekning/hent", function (data) {
             console.log(data);
             for (let i = 0; i < data.length; i++) {
-                $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr`);
+                $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
             }
-        })
+        });
+
+        document.getElementById("frmBestill").onsubmit = function (evt) {
+            evt.preventDefault();
+
+            const bestilling = {
+                fornavn: $("#inpFornavn").val(),
+                etternavn: $("#inpEtternavn").val(),
+                epost: $("#inpEpost").val(),
+                telefon: $("#inpTelefon").val(),
+                avreiseDato: $("#velgDato").val()
+            }
+
+            $.post("Bestilling/lagre", bestilling, function () {
+            });
+        }
     </script>
 </body>
 </html>
