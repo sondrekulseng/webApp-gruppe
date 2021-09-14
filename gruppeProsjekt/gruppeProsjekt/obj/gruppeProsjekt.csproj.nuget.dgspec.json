@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {}
+    "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {
+    "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+        "projectUniqueName": "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
         "projectName": "gruppeProsjekt",
-        "projectPath": "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+        "projectPath": "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
         "packagesPath": "C:\\Users\\sondr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
+        "outputPath": "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sondr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

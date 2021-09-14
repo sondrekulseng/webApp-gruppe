@@ -7,9 +7,10 @@ namespace gruppeProsjekt.Models
 {
     public class Bestilling
     {
+        public int id { get; set; }
         public int antall { get; set; }
 
-        public Billett billett { get; set; }
+        public Strekning billett { get; set; }
 
         public DateTime date { get; set; }
 

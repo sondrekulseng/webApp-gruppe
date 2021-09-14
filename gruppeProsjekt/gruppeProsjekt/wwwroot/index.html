@@ -21,6 +21,17 @@
     <input type="radio" name="tur" />
     <label>Tur/retur</label>
 
+    <select id="velgStrekning" class="form-control">
+    </select>
+
+    <script>
+        $.get("Strekning/hent", function (data) {
+            console.log(data);
+            for (let i = 0; i < data.length; i++) {
+                $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr`);
+            }
+        })
+    </script>
 </body>
 </html>
 
