@@ -44,6 +44,10 @@
             }
         });
 
+        $.get("Bestilling/hentAlle", function (data) {
+            console.log(data);
+        });
+
         document.getElementById("frmBestill").onsubmit = function (evt) {
             evt.preventDefault();
 

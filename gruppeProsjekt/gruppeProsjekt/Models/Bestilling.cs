@@ -51,6 +51,8 @@ namespace gruppeProsjekt.Models
         public string epost { get; set; }
         public string telefon { get; set; }
         public DateTime avreiseDato { get; set; }
-        public virtual int strekningID { get; set; }
+        public int strekningID { get; set; }
+        public string strekning { get; set; }
+        public double pris { get; set; }
     }
 }
