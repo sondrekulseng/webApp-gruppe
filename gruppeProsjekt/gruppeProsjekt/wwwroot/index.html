@@ -52,8 +52,9 @@
                 etternavn: $("#inpEtternavn").val(),
                 epost: $("#inpEpost").val(),
                 telefon: $("#inpTelefon").val(),
-                avreiseDato: $("#velgDato").val()
-            }
+                avreiseDato: $("#velgDato").val(),
+                strekningID: document.getElementById("velgStrekning").selectedIndex
+            };
 
             $.post("Bestilling/lagre", bestilling, function () {
             });

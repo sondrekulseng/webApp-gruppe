@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,7 +15,9 @@ namespace gruppeProsjekt.Models
             this.pris = pris;
         }
 
-        public int id { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int strekningID { get; set; }
         public string strekning { get; set; }
         public double pris { get; set; }
     }

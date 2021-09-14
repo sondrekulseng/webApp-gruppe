@@ -17,11 +17,15 @@ namespace gruppeProsjekt.Controller
             _DB = db;
         }
 
-        public void lagre(Bestilling b)
+        public void lagre(Bestill b)
         {
-            Bestilling bestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato);
+            Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato, b.strekningID);
+            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato);
 
-            _DB.Bestillinger.Add(bestill);
+            var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
+            nyBestill.strekningID = finnStrekningID;
+
+            _DB.Bestillinger.Add(nyBestill);
             _DB.SaveChanges();
         }
     }
