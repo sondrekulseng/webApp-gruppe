@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\sondr\\.nuget\\packages\\": {}
+    "C:\\Users\\ahm60\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+      "projectUniqueName": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
       "projectName": "gruppeProsjekt",
-      "projectPath": "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
-      "packagesPath": "C:\\Users\\sondr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sondr\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
+      "projectPath": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+      "packagesPath": "C:\\Users\\ahm60\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sondr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahm60\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
