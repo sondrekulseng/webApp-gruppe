@@ -33,10 +33,24 @@
         <input type="text" class="form-control" id="inpEtternavn" placeholder="Etternavn" required />
         <input type="email" class="form-control" id="inpEpost" placeholder="Epost" required />
         <input type="tel" class="form-control" id="inpTelefon" placeholder="Telefon" required />
+        <div class="alert alert-info" id="frmMsg" style="display: none;"></div>
         <button type="submit" class="btn btn-primary">Send bestilling</button>
     </form>
 
     <script>
+        function currentDate() {
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+
+            today = yyyy + '-' + mm + '-' + dd;
+
+            return today;
+        }
+        
+        $("#velgDato").attr("min", currentDate());
+
         $.get("Strekning/hent", function (data) {
             console.log(data);
             for (let i = 0; i < data.length; i++) {
@@ -61,6 +75,13 @@
             };
 
             $.post("Bestilling/lagre", bestilling, function () {
+                $("#inpFornavn").val("");
+                $("#inpEtternavn").val("");
+                $("#inpEpost").val("");
+                $("#inpTelefon").val("");
+                $("#velgDato").val("");
+                $("#frmMsg").css("display", "block");
+                $("#frmMsg").html("Bestilling lagret");
             });
         }
     </script>
