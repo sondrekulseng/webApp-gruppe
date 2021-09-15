@@ -39,6 +39,7 @@ namespace gruppeProsjekt.Controller
                 telefon = k.telefon,
                 epost = k.epost,
                 avreiseDato = k.avreiseDato.Date,
+                hjemreiseDato= k.hjemreiseDato.Date,
                 strekning = k.strekningID.strekning,
                 pris = k.strekningID.pris
             }).ToList();
