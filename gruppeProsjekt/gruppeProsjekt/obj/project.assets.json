@@ -1009,19 +1009,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Guled Mustafe\\.nuget\\packages\\": {}
+    "C:\\Users\\sondr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Guled Mustafe\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+      "projectUniqueName": "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
       "projectName": "gruppeProsjekt",
-      "projectPath": "C:\\Users\\Guled Mustafe\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
-      "packagesPath": "C:\\Users\\Guled Mustafe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Guled Mustafe\\Documents\\GitHub\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
+      "projectPath": "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+      "packagesPath": "C:\\Users\\sondr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sondr\\Documents\\webapp-ny\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Guled Mustafe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sondr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1074,7 +1074,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,7 +3,14 @@
     "",
     "\\gruppeProsjekt",
     "\\gruppeProsjekt\\gruppeProsjekt",
-    "\\gruppeProsjekt\\gruppeProsjekt\\wwwroot"
+    "\\gruppeProsjekt\\gruppeProsjekt\\Controller",
+    "\\gruppeProsjekt\\gruppeProsjekt\\Models",
+    "\\gruppeProsjekt\\gruppeProsjekt\\obj",
+    "\\gruppeProsjekt\\gruppeProsjekt\\Properties",
+    "\\gruppeProsjekt\\gruppeProsjekt\\wwwroot",
+    "\\gruppeProsjekt\\gruppeProsjekt\\wwwroot\\js",
+    "\\gruppeProsjekt\\gruppeProsjekt\\wwwroot\\lib"
   ],
+  "SelectedNode": "\\gruppeProsjekt\\gruppeProsjekt\\wwwroot\\index.html",
   "PreviewInSolutionExplorer": false
 }
