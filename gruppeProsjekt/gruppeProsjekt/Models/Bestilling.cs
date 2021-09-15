@@ -11,13 +11,14 @@ namespace gruppeProsjekt.Models
         {
         }
 
-        public Bestilling(string fornavn, string etternavn, string epost, string telefon, DateTime avreiseDato)
+        public Bestilling(string fornavn, string etternavn, string epost, string telefon, DateTime avreiseDato, DateTime hjemreiseDato)
         {
             this.fornavn = fornavn;
             this.etternavn = etternavn;
             this.epost = epost;
             this.telefon = telefon;
             this.avreiseDato = avreiseDato;
+            this.hjemreiseDato = hjemreiseDato;
         }
 
         public int id { get; set; }
@@ -26,6 +27,8 @@ namespace gruppeProsjekt.Models
         public string epost { get; set; }
         public string telefon { get; set; }
         public DateTime avreiseDato { get; set; }
+
+        public DateTime hjemreiseDato { get; set; }
         public virtual Strekning strekningID { get; set; }
     }
 
@@ -42,6 +45,7 @@ namespace gruppeProsjekt.Models
             this.epost = epost;
             this.telefon = telefon;
             this.avreiseDato = avreiseDato;
+            this.hjemreiseDato = hjemreiseDato;
             this.strekningID = strekningID;
         }
 
@@ -51,6 +55,8 @@ namespace gruppeProsjekt.Models
         public string epost { get; set; }
         public string telefon { get; set; }
         public DateTime avreiseDato { get; set; }
+
+        public DateTime hjemreiseDato { get; set; }
         public int strekningID { get; set; }
         public string strekning { get; set; }
         public double pris { get; set; }
