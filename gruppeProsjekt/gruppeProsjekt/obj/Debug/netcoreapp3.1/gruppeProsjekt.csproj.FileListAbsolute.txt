@@ -427,3 +427,15 @@ C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsj
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.dll
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.pdb
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.genruntimeconfig.cache
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
