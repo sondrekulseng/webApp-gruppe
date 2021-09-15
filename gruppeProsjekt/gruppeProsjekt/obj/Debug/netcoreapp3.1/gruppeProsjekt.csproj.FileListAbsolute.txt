@@ -339,3 +339,6 @@ C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppePro
 /Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.dll
 /Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.pdb
 /Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.genruntimeconfig.cache
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
