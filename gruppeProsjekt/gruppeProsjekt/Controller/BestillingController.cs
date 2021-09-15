@@ -20,7 +20,7 @@ namespace gruppeProsjekt.Controller
         public void lagre(Bestill b)
         {
             Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.strekningID);
-            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date);
+            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.hjemreiseDato);
 
             var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
             nyBestill.strekningID = finnStrekningID;
