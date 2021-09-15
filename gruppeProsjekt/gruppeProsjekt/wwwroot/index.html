@@ -44,7 +44,7 @@
         <input type="tel" class="form-control" id="inpTelefon" placeholder="Telefon" required />
         <button type="submit" class="btn btn-primary">Send bestilling</button>
     </form>
-
+    <table id="tabell"></table>
     <script>
         $.get("Strekning/hent", function (data) {
             console.log(data);
@@ -55,6 +55,12 @@
 
         $.get("Bestilling/hentAlle", function (data) {
             console.log(data);
+            for (var i = 0; i < data.length; i++) {
+
+            }
+            
+                }
+           
         });
 
         document.getElementById("frmBestill").onsubmit = function (evt) {
