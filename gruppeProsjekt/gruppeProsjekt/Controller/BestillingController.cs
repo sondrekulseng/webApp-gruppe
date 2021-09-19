@@ -19,8 +19,8 @@ namespace gruppeProsjekt.Controller
 
         public void lagre(Bestill b)
         {
-            Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.strekningID);
-            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.hjemreiseDato);
+            Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato.Date, b.strekningID);
+            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
 
             var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
             nyBestill.strekningID = finnStrekningID;
@@ -38,8 +38,8 @@ namespace gruppeProsjekt.Controller
                 etternavn = k.etternavn,
                 telefon = k.telefon,
                 epost = k.epost,
-                avreiseDato = k.avreiseDato.Date,
-                hjemreiseDato= k.hjemreiseDato.Date,
+                formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
+                formatRetur= k.returDato.Date.ToString("dd.MM.yyyy"),
                 strekning = k.strekningID.strekning,
                 pris = k.strekningID.pris
             }).ToList();
