@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {}
+    "C:\\Users\\Sondre\\Documents\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {
+    "C:\\Users\\Sondre\\Documents\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+        "projectUniqueName": "C:\\Users\\Sondre\\Documents\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
         "projectName": "gruppeProsjekt",
-        "projectPath": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
-        "packagesPath": "C:\\Users\\ahm60\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
+        "projectPath": "C:\\Users\\Sondre\\Documents\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+        "packagesPath": "C:\\Users\\Sondre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sondre\\Documents\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahm60\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sondre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
