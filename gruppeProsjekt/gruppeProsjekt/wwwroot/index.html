@@ -40,7 +40,7 @@
 </head>
 <body onload="hentBestillinger()">
     <h1 style="text-align: center; color: white;">EasyCruise</h1>
-  
+
     <form class="form-group hovedboks" id="frmBestill">
         <h3>Bestill reise</h3>
         <!-- Velg reise-->
@@ -53,10 +53,12 @@
         <select id="velgStrekning" class="form-control"></select>
         <!-- Velg avreisedato -->
         <h4>Avreise</h4>
-        <input type="date" class="form-control" id="velgReturDato" onchange="validateRetur(this.value)" required />
-        <!-- Hjemreise dato -->
-        <h4>Retur</h4>
         <input type="date" class="form-control" id="velgDato" onchange="validateRetur(this.value)" required />
+        <!-- Hjemreise dato -->
+        <div id="divRetur">
+            <h4>Hjemreise</h4>
+            <input type="date" class="form-control" id="velgReturDato" disabled />
+        </div>
         <!-- Kundeinfo -->
         <h4>Kunde info</h4>
         <input type="text" class="form-control" id="inpFornavn" placeholder="Fornavn" required />
@@ -66,7 +68,7 @@
         <div class="alert alert-info" id="frmMsg" style="display: none;"></div>
         <button type="submit" class="btn btn-primary">Send bestilling</button>
     </form>
-    <table id="tabell" class="table table-bordered table table-hover"  style="background-color:white;border-width:10px;">
+    <table id="tabell" class="table" style="background-color: white">
         <tr>
             <th>Fornavn</th>
             <th>Etternavn</th>
@@ -112,9 +114,8 @@
                 $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
             }
         });
-        
-        function hentBestillinger() {
 
+        function hentBestillinger() {
             $.get("Bestilling/hentAlle", function (data) {
                 console.log(data);
                 for (var i = 0; i < data.length; i++) {
