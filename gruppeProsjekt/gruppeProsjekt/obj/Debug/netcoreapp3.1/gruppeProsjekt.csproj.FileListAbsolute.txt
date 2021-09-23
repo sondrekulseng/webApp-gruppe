@@ -263,6 +263,106 @@ C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\obj\Debug\netco
 C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.dll
 C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.pdb
 C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.genruntimeconfig.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.exe
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.deps.json
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.runtimeconfig.json
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.runtimeconfig.dev.json
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.pdb
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.Views.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.Views.pdb
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.csproj.AssemblyReference.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.AssemblyInfoInputs.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.AssemblyInfo.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.csproj.CoreCompileInputs.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.RazorAssemblyInfo.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.RazorAssemblyInfo.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\staticwebassets\gruppeProsjekt.StaticWebAssets.Manifest.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\staticwebassets\gruppeProsjekt.StaticWebAssets.xml
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\scopedcss\bundle\gruppeProsjekt.styles.css
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.TagHelpers.input.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.TagHelpers.output.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.RazorCoreGenerate.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.RazorTargetAssemblyInfo.cache
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.RazorTargetAssemblyInfo.cs
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.Views.pdb
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.csproj.CopyComplete
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.dll
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.pdb
+C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.genruntimeconfig.cache
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sondr\Documents\webapp-ny\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.exe
@@ -273,6 +373,8 @@ C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.pdb
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.Views.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\gruppeProsjekt.Views.pdb
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -293,11 +395,18 @@ C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.CodeDom.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -311,6 +420,9 @@ C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.AssemblyInfoInputs.cache
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.AssemblyInfo.cs
@@ -338,3 +450,4 @@ C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.dll
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.pdb
 C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.genruntimeconfig.cache
+C:\Users\Sondre\Documents\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.csproj.AssemblyReference.cache
