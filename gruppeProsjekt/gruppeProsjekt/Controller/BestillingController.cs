@@ -29,6 +29,7 @@ namespace gruppeProsjekt.Controller
             _DB.SaveChanges();
         }
 
+        // hent alle bestillinger
         public List<Bestill> hentAlle()
         {
             List<Bestill> result = _DB.Bestillinger.Select(k => new Bestill
@@ -45,6 +46,25 @@ namespace gruppeProsjekt.Controller
             }).ToList();
 
             return result;
+        }
+
+        // hent siste bestilling
+        public Bestill hentSiste()
+        {
+            Bestill b = _DB.Bestillinger.Select(k => new Bestill
+            {
+                id = k.id,
+                fornavn = k.fornavn,
+                etternavn = k.etternavn,
+                telefon = k.telefon,
+                epost = k.epost,
+                formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
+                formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
+                strekning = k.strekningID.strekning,
+                pris = k.strekningID.pris
+            }).Last();
+
+            return b;
         }
     }
 }
