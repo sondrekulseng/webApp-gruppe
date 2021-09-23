@@ -3,43 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <title>Bestill</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        body {
-            margin: auto;
-            width: 60%;
-            margin-top: 1em;
-            background-image: url('http://cdn.cnn.com/cnnnext/dam/assets/210504130820-msc-magnifica.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        .form-control {
-            margin-bottom: 0.5em;
-        }
-
-        .hovedboks {
-            background-color: #000;
-            margin: auto;
-            padding: 1.5em;
-            opacity: 0.9;
-            color: white;
-            width: 60%;
-        }
-
-        table {
-            margin-top: 1em;
-        }
-
-        #divRetur {
-            display: none;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
-<body onload="hentBestillinger()">
-    <h1 style="text-align: center; color: white;">EasyCruise</h1>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">EasyCruise</a>
+        <a class="nav-link active" href="index.html">Ny bestilling</a>
+        <a class="nav-link" href="bestillinger.html">Mine bestillinger</a>
+    </nav>
 
     <form class="form-group hovedboks" id="frmBestill">
         <h3>Bestill reise</h3>
@@ -65,80 +41,31 @@
         <input type="text" class="form-control" id="inpEtternavn" placeholder="Etternavn" required />
         <input type="email" class="form-control" id="inpEpost" placeholder="Epost" required />
         <input type="tel" class="form-control" id="inpTelefon" placeholder="Telefon" required />
-        <div class="alert alert-info" id="frmMsg" style="display: none;"></div>
         <button type="submit" class="btn btn-primary">Send bestilling</button>
     </form>
-    <table id="tabell" class="table" style="background-color: white">
-        <tr>
-            <th>Fornavn</th>
-            <th>Etternavn</th>
-            <th>E-post</th>
-            <th>Telefon</th>
-            <th>Strekning</th>
-            <th>Avreise</th>
-            <th>Retur</th>
-            <th>Total pris</th>
-        </tr>
-    </table>
-    <script>
-        function endreSkjema(val) {
-            if (val == 0) {
-                // en vei
-                $("#divRetur").css("display", "none");
-            } else {
-                $("#divRetur").css("display", "block");
-            }
-        }
 
-        function validateRetur(avreiseDato) {
-            $("#velgReturDato").attr("min", avreiseDato);
-            $("#velgReturDato").prop("disabled", false);
-        }
+    <!-- Modal for kvittering -->
+    <div class="modal fade" id="modalContainer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#modalContainer').modal('hide');">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer" id="modalFooter">
+                    <button type="button" class="btn btn-secondary" onclick="$('#modalContainer').modal('hide');">Lukk</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        function currentDate() {
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            var yyyy = today.getFullYear();
-
-            today = yyyy + '-' + mm + '-' + dd;
-
-            return today;
-        }
-
+    <script>// dato frem i tid
         $("#velgDato").attr("min", currentDate());
 
-        $.get("Strekning/hent", function (data) {
-            console.log(data);
-            for (let i = 0; i < data.length; i++) {
-                $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
-            }
-        });
-
-        function hentBestillinger() {
-            $.get("Bestilling/hentAlle", function (data) {
-                console.log(data);
-                for (var i = 0; i < data.length; i++) {
-                    let returDato = "Ingen retur";
-                    let totalPris = data[i].pris;
-                    if (data[i].formatRetur != "01.01.0001") {
-                        returDato = data[i].formatRetur;
-                        totalPris = totalPris * 2;
-                    }
-                    $("#tabell").append(`<tr>
-                                            <td>${data[i].fornavn}</td>
-                                            <td>${data[i].etternavn}</td>
-                                            <td>${data[i].epost}</td>
-                                            <td>${data[i].telefon}</td>
-                                            <td>${data[i].strekning}, ${data[i].pris} kr</td>
-                                            <td>${data[i].formatAvreise}</td>
-                                            <td>${returDato}</td>
-                                            <td>${totalPris} kr</td>
-                                        </tr>`);
-                }
-            });
-        }
-
+        // form submit
         document.getElementById("frmBestill").onsubmit = function (evt) {
             evt.preventDefault();
 
@@ -160,8 +87,10 @@
                 $("#velgDato").val("");
                 $("#velgReturDato").val("");
                 $("#frmMsg").css("display", "block");
-                $("#frmMsg").html("Bestilling lagret");
-                hentBestillinger();
+                $("#frmMsg").html("Bestilling lagret!");
+                $('#modalContainer').modal('show');
+                $("#modalTitle").html(`Takk ${bestilling.fornavn}!`);
+                $("#modalBody").html(`Din bestilling er sendt. På <a href="bestillinger.html"> mine bestillinger</a> finner du alle bestillingene dine.`);
             });
         }</script>
 </body>

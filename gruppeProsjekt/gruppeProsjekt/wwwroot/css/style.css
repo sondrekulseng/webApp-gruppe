@@ -1,0 +1,41 @@
+﻿body {
+    margin: auto;
+    background-image: url('http://cdn.cnn.com/cnnnext/dam/assets/210504130820-msc-magnifica.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form-control {
+    margin-bottom: 0.5em;
+}
+
+.hovedboks {
+    background-color: #000;
+    margin: auto;
+    padding: 1.5em;
+    opacity: 0.9;
+    color: white;
+    width: 60%;
+    margin-top: 1em;
+}
+
+#tabell {
+    margin-top: 1em;
+    width: 500px;
+    background-color: white;
+}
+
+#divRetur {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
