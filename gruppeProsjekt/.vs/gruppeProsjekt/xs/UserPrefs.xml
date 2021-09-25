@@ -1,27 +1,28 @@
 ﻿<Properties StartupConfiguration="{E5DE65C4-0233-4ED6-B492-C0DD0F66A0D9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/Controller/BestillingController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/wwwroot/js/script.js">
     <Files>
-      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" Line="53" Column="10" />
-      <File FileName="gruppeProsjekt/wwwroot/css/style.css" />
+      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/Program.cs" Line="16" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="104" Column="55" />
+      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" Line="31" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/js/script.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="gruppeProsjekt" expanded="True">
             <Node name="gruppeProsjekt" expanded="True">
-              <Node name="Controller" expanded="True">
-                <Node name="BestillingController.cs" selected="True" />
-              </Node>
+              <Node name="Controller" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="js" expanded="True" />
+                <Node name="js" expanded="True">
+                  <Node name="script.js" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -62,7 +62,8 @@
         </div>
     </div>
 
-    <script>// dato frem i tid
+    <script>
+        // dato frem i tid
         $("#velgDato").attr("min", currentDate());
 
         // form submit
@@ -86,12 +87,48 @@
                 $("#inpTelefon").val("");
                 $("#velgDato").val("");
                 $("#velgReturDato").val("");
-                $("#frmMsg").css("display", "block");
-                $("#frmMsg").html("Bestilling lagret!");
-                $('#modalContainer').modal('show');
-                $("#modalTitle").html(`Takk ${bestilling.fornavn}!`);
-                $("#modalBody").html(`Din bestilling er sendt. På <a href="bestillinger.html"> mine bestillinger</a> finner du alle bestillingene dine.`);
+            }).done(function () {
+                // ingen feil, vis kvittering
+                visKvittering();
+            }).fail(function () {
+                // feil
+                alert("Det har skjedd en feil");
             });
-        }</script>
+        }
+
+        function visKvittering() {
+            $.get("Bestilling/hentKvittering", function (data) {
+                let totalPris = data.pris;
+                $('#modalContainer').modal('show');
+                $("#modalTitle").html(`Bestillingskvittering`);
+                console.log(data.formatRetur);
+                console.log(data.formatAvreise);
+                if (data.formatRetur != "01.01.0001") {
+                    // retur
+                    totalPris = totalPris * 2;
+                    $("#modalBody").html(`Navn: ${data.fornavn} ${data.etternavn}<br>
+                                          Epost: ${data.epost}<br>
+                                          Telefon: ${data.telefon}<br>
+                                          Strekning: ${data.strekning}, ${data.pris} kr (tur/retur)<br>
+                                          Avreise: ${data.formatAvreise} <br>
+                                          Retur: ${data.formatRetur} <br>
+                                          <strong>Totalpris: ${totalPris} kr</strong><br>
+                                          <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.
+                                      `);
+                } else {
+                    // ingen retur
+                    $("#modalBody").html(`Navn: ${data.fornavn} ${data.etternavn}<br>
+                                          Epost: ${data.epost}<br>
+                                          Telefon: ${data.telefon}<br>
+                                          Strekning: ${data.strekning}, ${data.pris} kr (en vei)<br>
+                                          Avreise: ${data.formatAvreise} <br>
+                                          <strong>Totalpris: ${totalPris} kr</strong><br>
+                                          <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.
+                                      `);
+
+                }
+            });
+        }
+    </script>
 </body>
 </html>

@@ -11,13 +11,13 @@ namespace gruppeProsjekt.Controller
     public class BestillingController : ControllerBase
     {
         private DB _DB;
-
+        
         public BestillingController(DB db)
         {
             _DB = db;
         }
 
-        public void lagre(Bestill b)
+        public bool lagre(Bestill b)
         {
             Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato.Date, b.strekningID);
             Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
@@ -25,8 +25,12 @@ namespace gruppeProsjekt.Controller
             var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
             nyBestill.strekningID = finnStrekningID;
 
+            // lagre ny bestilling
             _DB.Bestillinger.Add(nyBestill);
             _DB.SaveChanges();
+
+            // returner kvittering
+            return true;
         }
 
         // hent alle bestillinger
@@ -48,8 +52,8 @@ namespace gruppeProsjekt.Controller
             return result;
         }
 
-        // hent siste bestilling
-        public Bestill hentSiste()
+        // hent kvittering (siste bestilling)
+        public Bestill hentKvittering()
         {
             Bestill b = _DB.Bestillinger.Select(k => new Bestill
             {
@@ -62,7 +66,7 @@ namespace gruppeProsjekt.Controller
                 formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
                 strekning = k.strekningID.strekning,
                 pris = k.strekningID.pris
-            }).Last();
+            }).OrderBy(b => b.id).Last();
 
             return b;
         }
