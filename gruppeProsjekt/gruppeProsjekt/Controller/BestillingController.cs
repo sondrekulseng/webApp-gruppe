@@ -29,7 +29,6 @@ namespace gruppeProsjekt.Controller
             _DB.Bestillinger.Add(nyBestill);
             _DB.SaveChanges();
 
-            // returner kvittering
             return true;
         }
 
