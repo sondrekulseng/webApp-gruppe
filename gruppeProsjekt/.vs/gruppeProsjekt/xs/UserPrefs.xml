@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/wwwroot/js/script.js">
     <Files>
       <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="1" Column="1" />
-      <File FileName="gruppeProsjekt/Program.cs" Line="16" Column="1" />
-      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="104" Column="55" />
-      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" Line="31" Column="1" />
-      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/Program.cs" />
+      <File FileName="gruppeProsjekt/wwwroot/index.html" />
+      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" />
+      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" />
       <File FileName="gruppeProsjekt/wwwroot/js/script.js" Line="1" Column="1" />
     </Files>
     <Pads>

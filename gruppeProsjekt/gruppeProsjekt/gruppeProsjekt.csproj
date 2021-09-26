@@ -15,5 +15,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
+    <Folder Include="JPG\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="JPG\" />
   </ItemGroup>
 </Project>

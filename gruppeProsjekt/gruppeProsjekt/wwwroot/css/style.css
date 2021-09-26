@@ -11,13 +11,16 @@
 }
 
 .hovedboks {
+    opacity: 0.8;
+    color: white;
+    width: 60%;
     background-color: #000;
     margin: auto;
     padding: 1.5em;
-    opacity: 0.9;
-    color: white;
-    width: 60%;
-    margin-top: 1em;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
 }
 
 #tabell {
@@ -38,4 +41,8 @@
 a {
     color: black;
     text-decoration: none;
+}
+
+.logo {
+    text-align: center;
 }
