@@ -522,7 +522,6 @@ C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsj
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.csproj.AssemblyReference.cache
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.AssemblyInfoInputs.cache
 C:\Users\Guled Mustafe\Documents\GitHub\webApp-gruppe\gruppeProsjekt\gruppeProsjekt\obj\Debug\netcoreapp3.1\gruppeProsjekt.AssemblyInfo.cs

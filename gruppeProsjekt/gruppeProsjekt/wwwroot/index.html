@@ -47,10 +47,10 @@
         <!-- Kundeinfo -->
         <br>
         <h4>Kunde info</h4>
-        <input type="text" class="form-control" id="inpFornavn" placeholder="Fornavn" required />
+        <input type="text" class="form-control" id="inpFornavn"  placeholder="Fornavn" required />
         <input type="text" class="form-control" id="inpEtternavn" placeholder="Etternavn" required />
         <input type="email" class="form-control" id="inpEpost" placeholder="Epost" required />
-        <input type="tel" class="form-control" id="inpTelefon" placeholder="Telefon" required />
+        <input type="tel" class="form-control" id="inpTelefon" pattern="[4,9]{1}[0-9]{7}" placeholder="Telefon" required />
         <br>
         <center><button type="submit" class="btn btn-primary">Send bestilling</button></center>
     </form>
