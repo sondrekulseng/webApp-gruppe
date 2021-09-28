@@ -110,30 +110,34 @@
             $.get("Bestilling/hentKvittering", function (data) {
                 let totalPris = data.pris;
                 $('#modalContainer').modal('show');
-                $("#modalTitle").html(`Bestillingskvittering`);
+                $("#modalTitle").html(`Kvittering`);
                 console.log(data.formatRetur);
                 console.log(data.formatAvreise);
                 if (data.formatRetur != "01.01.0001") {
                     // retur
                     totalPris = totalPris * 2;
-                    $("#modalBody").html(`Navn: ${data.fornavn} ${data.etternavn}<br>
-                                              Epost: ${data.epost}<br>
-                                              Telefon: ${data.telefon}<br>
-                                              Strekning: ${data.strekning}, ${data.pris} kr (tur/retur)<br>
-                                              Avreise: ${data.formatAvreise} <br>
-                                              Retur: ${data.formatRetur} <br>
-                                              <strong>Totalpris: ${totalPris} kr</strong><br>
-                                              <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.
+                    $("#modalBody").html(`<img src='media/check.jpg' id='imgCheck'>
+                                          <strong>Bestilling bekreftet!</strong>
+                                          <p>Navn: ${data.fornavn} ${data.etternavn}<br>
+                                             Epost: ${data.epost}<br>
+                                             Telefon: ${data.telefon}<br>
+                                             Strekning: ${data.strekning}, ${data.pris} kr (tur/retur)<br>
+                                             Avreise: ${data.formatAvreise} <br>
+                                             Retur: ${data.formatRetur} <br>
+                                             <strong>Totalpris: ${totalPris} kr</strong><br>
+                                             <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.</p>
                                           `);
                 } else {
                     // ingen retur
-                    $("#modalBody").html(`Navn: ${data.fornavn} ${data.etternavn}<br>
-                                              Epost: ${data.epost}<br>
-                                              Telefon: ${data.telefon}<br>
-                                              Strekning: ${data.strekning}, ${data.pris} kr (en vei)<br>
-                                              Avreise: ${data.formatAvreise} <br>
-                                              <strong>Totalpris: ${totalPris} kr</strong><br>
-                                              <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.
+                    $("#modalBody").html(`<img src='media/check.jpg' id='imgCheck'>
+                                          <strong>Bestilling bekreftet!</strong>
+                                          <p>Navn: ${data.fornavn} ${data.etternavn}<br>
+                                             Epost: ${data.epost}<br>
+                                             Telefon: ${data.telefon}<br>
+                                             Strekning: ${data.strekning}, ${data.pris} kr (en vei)<br>
+                                             Avreise: ${data.formatAvreise} <br>
+                                             <strong>Totalpris: ${totalPris} kr</strong><br>
+                                             <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.</p>
                                           `);
 
                 }

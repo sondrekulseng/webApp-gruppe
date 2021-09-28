@@ -1,6 +1,6 @@
 ﻿body {
     margin: auto;
-    background-image: url('http://cdn.cnn.com/cnnnext/dam/assets/210504130820-msc-magnifica.jpg');
+    background-image: url('../media/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -45,4 +45,10 @@ a {
 
 .logo {
     text-align: center;
+}
+
+#imgCheck {
+    height: 150px;
+    height: 150px;
+    margin: 0 auto;
 }

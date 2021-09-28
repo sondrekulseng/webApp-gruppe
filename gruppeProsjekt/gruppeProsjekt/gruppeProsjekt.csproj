@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
     <Folder Include="JPG\" />
+    <Folder Include="wwwroot\media\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="JPG\" />
