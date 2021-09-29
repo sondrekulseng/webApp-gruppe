@@ -6,17 +6,21 @@ function visKvittering() {
         $('#modalContainer').modal('show');
         $("#modalTitle").html(`Kvittering`);
         let ut = `<img src='media/check.jpg' id='imgCheck'>
-                            <strong>Bestilling nr. ${data.id} bekreftet!</strong>
-                            <p>Navn: ${data.fornavn} ${data.etternavn}<br>
-                               Epost: ${data.epost}<br>
-                               Telefon: ${data.telefon}<br>
-                               Strekning: ${data.strekning}, ${data.pris} kr (tur/retur)<br>
-                               Avreise: ${data.formatAvreise}<br>`;
+                  <strong>Bestilling nr. ${data.id} bekreftet!</strong>
+                  <p>Navn: ${data.fornavn} ${data.etternavn}<br>
+                     Epost: ${data.epost}<br>
+                     Telefon: ${data.telefon}<br>`;
 
         if (data.formatRetur != "01.01.0001") {
             // retur
             totalPris = totalPris * 2;
-            ut += `Retur: ${data.formatRetur}<br>`;
+            ut += `Strekning: ${data.strekning}, ${data.pris} kr (tur/retur) <br>
+                   Avreise: ${data.formatAvreise} <br>
+                   Retur: ${data.formatRetur}<br>`;
+        } else {
+            // en vei
+            ut += `Strekning: ${data.strekning}, ${data.pris} kr (en vei) <br>
+                   Avreise: ${data.formatAvreise} <br>`;
         }
 
         ut += `<br><strong>Totalpris: ${totalPris} kr</strong><br>
