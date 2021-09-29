@@ -1,5 +1,31 @@
 ﻿// Main js file
 
+function visKvittering() {
+    $.get("Bestilling/hentKvittering", function (data) {
+        let totalPris = data.pris;
+        $('#modalContainer').modal('show');
+        $("#modalTitle").html(`Kvittering`);
+        let ut = `<img src='media/check.jpg' id='imgCheck'>
+                            <strong>Bestilling nr. ${data.id} bekreftet!</strong>
+                            <p>Navn: ${data.fornavn} ${data.etternavn}<br>
+                               Epost: ${data.epost}<br>
+                               Telefon: ${data.telefon}<br>
+                               Strekning: ${data.strekning}, ${data.pris} kr (tur/retur)<br>
+                               Avreise: ${data.formatAvreise}<br>`;
+
+        if (data.formatRetur != "01.01.0001") {
+            // retur
+            totalPris = totalPris * 2;
+            ut += `Retur: ${data.formatRetur}<br>`;
+        }
+
+        ut += `<br><strong>Totalpris: ${totalPris} kr</strong><br>
+                       <br>På <a href=bestillinger.html>mine bestillinger</a> kan du se alle reisene dine.</p>`;
+
+        $("#modalBody").html(ut);
+    });
+}
+
 function endreSkjema(val) {
     if (val == 0) {
         // en vei
@@ -17,7 +43,7 @@ function validateRetur(avreiseDato) {
 function currentDate() {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
     var yyyy = today.getFullYear();
 
     today = yyyy + '-' + mm + '-' + dd;
@@ -25,12 +51,14 @@ function currentDate() {
     return today;
 }
 
-$.get("Strekning/hent", function (data) {
-    console.log(data);
-    for (let i = 0; i < data.length; i++) {
-        $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
-    }
-});
+function hentStrekninger() {
+    $.get("Strekning/hent", function (data) {
+        console.log(data);
+        for (let i = 0; i < data.length; i++) {
+            $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
+        }
+    });
+}
 
 function hentBestillinger() {
     $.get("Bestilling/hentAlle", function (data) {
@@ -43,6 +71,7 @@ function hentBestillinger() {
                 totalPris = totalPris * 2;
             }
             $("#tabell").append(`<tr>
+                                            <td>${data[i].id}</td>
                                             <td>${data[i].fornavn}</td>
                                             <td>${data[i].etternavn}</td>
                                             <td>${data[i].epost}</td>
