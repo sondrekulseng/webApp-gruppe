@@ -23,12 +23,6 @@
     border-bottom-right-radius: 45px;
 }
 
-#tabell {
-    margin-top: 1em;
-    width: 500px;
-    background-color: white;
-}
-
 #divRetur {
     display: none;
 }
@@ -51,4 +45,9 @@ a {
     height: 150px;
     height: 150px;
     margin: 0 auto;
+}
+
+.wrapper {
+    margin: auto;
+    width: 80%;
 }

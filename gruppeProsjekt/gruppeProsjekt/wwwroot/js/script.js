@@ -64,8 +64,21 @@ function hentStrekninger() {
     });
 }
 
-function hentBestillinger() {
-    $.get("Bestilling/hentAlle", function (data) {
+function hentBestillinger(sort) {
+    $("#tabell").html(`<tr>
+                        <th>ID</th>
+                        <th>Fornavn</th>
+                        <th>Etternavn</th>
+                        <th>E-post</th>
+                        <th>Telefon</th>
+                        <th>Strekning</th>
+                        <th>Avreise</th>
+                        <th>Retur</th>
+                        <th>Total pris</th>
+                       </tr>`);
+
+    // hent bestillinger fra database
+    $.get(`Bestilling/hentAlle?sort=${sort}`, function (data) {
         console.log(data);
         for (var i = 0; i < data.length; i++) {
             let returDato = "Ingen retur";

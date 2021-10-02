@@ -33,9 +33,45 @@ namespace gruppeProsjekt.Controller
         }
 
         // hent alle bestillinger
-        public List<Bestill> hentAlle()
+        public List<Bestill> hentAlle(int sort)
         {
-            List<Bestill> result = _DB.Bestillinger.Select(k => new Bestill
+
+            var alle = _DB.Bestillinger.OrderBy(b => b.id);
+
+            if (sort == 0)
+            {
+                // ID stigende
+                alle = _DB.Bestillinger.OrderBy(b => b.id);
+            }
+            else if (sort == 1)
+            {
+                // ID synkende
+                alle = _DB.Bestillinger.OrderByDescending(b => b.id);
+            }
+            else if (sort == 2)
+            {
+                // Avreise dato
+                alle = _DB.Bestillinger.OrderBy(b => b.avreiseDato);
+            }
+            else if (sort == 3)
+            {
+                // Strekning alfabetisk
+                alle = _DB.Bestillinger.OrderBy(b => b.strekningID.strekning);
+            }
+            else if (sort == 4)
+            {
+
+                // Fornavn alfabetisk
+                alle = _DB.Bestillinger.OrderBy(b => b.fornavn);
+            }
+            else if (sort == 5)
+            {
+
+                // Etternavn alfabetisk
+                alle = _DB.Bestillinger.OrderBy(b => b.etternavn);
+            }
+
+            return alle.Select(k => new Bestill
             {
                 id = k.id,
                 fornavn = k.fornavn,
@@ -43,12 +79,12 @@ namespace gruppeProsjekt.Controller
                 telefon = k.telefon,
                 epost = k.epost,
                 formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
-                formatRetur= k.returDato.Date.ToString("dd.MM.yyyy"),
+                formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
                 strekning = k.strekningID.strekning,
                 pris = k.strekningID.pris
             }).ToList();
 
-            return result;
+
         }
 
         // hent kvittering (siste bestilling)

@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
-<body onload="hentBestillinger()">
+<body onload="hentBestillinger(0)">
 
     <!-- Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 2%;">
@@ -24,19 +24,23 @@
     <!-- Overskrift -->
     <h3 style="color: white; text-align: center;">Alle bestillinger</h3>
 
-    <!-- Tabell med bestillinger -->
-    <table id="tabell" class="table table-striped" style="background-color: white; width: 80%; margin: auto; margin-top: 1em;">
-        <tr>
-            <th>ID</th>
-            <th>Fornavn</th>
-            <th>Etternavn</th>
-            <th>E-post</th>
-            <th>Telefon</th>
-            <th>Strekning</th>
-            <th>Avreise</th>
-            <th>Retur</th>
-            <th>Total pris</th>
-        </tr>
-    </table>
+    <div class="wrapper">
+
+        <!-- Sorter tabell -->
+        <select class="form-control" onchange="hentBestillinger(this.selectedIndex)">
+            <option>ID, stigende</option>
+            <option>ID, synkende</option>
+            <option>Avreisedato</option>
+            <option>Strekning, alfabetisk</option>
+            <option>Fornavn, alfabetisk</option>
+            <option>Etternavn, alfabetisk</option>
+        </select>
+
+        <!-- Tabell med bestillinger -->
+        <table id="tabell" class="table table-striped" style="background-color: white; margin-top: 1em; width: 100%;"></table>
+
+    </div>
+
+    
 </body>
 </html>
