@@ -66,7 +66,7 @@ function hentStrekninger() {
 
 function hentBestillinger(sort) {
     $("#tabell").html(`<tr>
-                        <th>ID</th>
+                        <th>OrdreNr</th>
                         <th>Fornavn</th>
                         <th>Etternavn</th>
                         <th>E-post</th>

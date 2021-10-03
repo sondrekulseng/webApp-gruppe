@@ -17,29 +17,29 @@
         </a>
         <ul>
             <li><a href="index.html" style="text-decoration:none;">Ny bestilling</a></li>
-            <li><a href="bestillinger.html" style="text-decoration:none;">Mine bestillinger</a></li>
+            <li><a href="bestillinger.html" style="text-decoration:none;" class="active">Mine bestillinger</a></li>
             <li><a href="#kontaktOss" style="text-decoration:none;">Kontakt oss</a></li>
         </ul>
     </div>
     <br><br><br><br><br>
 
-    <!-- Overskrift -->
-    <h3 style="color: white; text-align: center;">Alle bestillinger</h3>
+    <div class="wrapper">
 
-    <!-- Tabell med bestillinger -->
-    <table id="tabell" class="table table-striped" style="background-color: white; width: 80%; margin: auto; margin-top: 1em;">
-        <tr>
-            <th>ID</th>
-            <th>Fornavn</th>
-            <th>Etternavn</th>
-            <th>E-post</th>
-            <th>Telefon</th>
-            <th>Strekning</th>
-            <th>Avreise</th>
-            <th>Retur</th>
-            <th>Total pris</th>
-        </tr>
-    </table>
+        <!-- Sorter tabell -->
+        <h3>Sorter tabell</h3>
+        <select class="form-control" onchange="hentBestillinger(this.selectedIndex)">
+            <option>OrdreNr, stigende</option>
+            <option>OrdreNr, synkende</option>
+            <option>Avreisedato</option>
+            <option>Strekning, alfabetisk</option>
+            <option>Fornavn, alfabetisk</option>
+            <option>Etternavn, alfabetisk</option>
+        </select>
+
+        <!-- Tabell med bestillinger -->
+        <table id="tabell" class="table table-striped" style="background-color: white; margin-top: 1em; width: 100%;"></table>
+
+    </div>
 
     <!-- Kontakt oss-->
     <div id="kontaktOss">
