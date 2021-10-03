@@ -10,16 +10,18 @@
 </head>
 <body onload="hentBestillinger()">
 
-    <!-- Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 2%;">
-        <a style="margin-left:27%;" class="nav-link" href="index.html">Ny bestilling</a>
+    <!-- Meny bar-->
+    <div class="meny">
         <a href="index.html">
-            <div class="logo">
-                <img src="tomCruise.png" href="index.html" style="width: 25%; height: 25%;">
-            </div>
+            <img src="tomCruise.png" style="width: 7%; height: auto; float: left;">
         </a>
-        <a class="nav-link active" href="bestillinger.html">Mine bestillinger</a>
-    </nav>
+        <ul>
+            <li><a href="index.html">Ny bestilling</a></li>
+            <li><a href="bestillinger.html">Mine bestillinger</a></li>
+            <li><a href="#kontaktOss">Kontakt oss</a></li>
+        </ul>
+    </div>
+    <br><br><br><br><br>
 
     <!-- Overskrift -->
     <h3 style="color: white; text-align: center;">Alle bestillinger</h3>
@@ -38,5 +40,19 @@
             <th>Total pris</th>
         </tr>
     </table>
+
+    <!-- Kontakt oss-->
+    <div id="kontaktOss">
+        <img src="tomCruise.png" style="width: 400px; height: auto; float: right; margin-top: 2%; margin-right: 20%;">
+
+        <h1>Kontakt oss</h1>
+
+        <p>Tlf nr: +47 911 55 962</p>
+        <p>Mail: t0mCruise@gmail.com</p>
+        <p>Facebook: TomCruise</p>
+        <p>Instagram: @t0mcruise</p>
+        <p>Snapchat: Tom-Cruise123</p>
+    </div>
+
 </body>
 </html>
