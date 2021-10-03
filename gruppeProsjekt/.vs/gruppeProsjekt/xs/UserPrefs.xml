@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{E5DE65C4-0233-4ED6-B492-C0DD0F66A0D9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/wwwroot/css/style.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/wwwroot/bestillinger.html">
     <Files>
-      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="100" Column="12" />
+      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="97" Column="12" />
       <File FileName="gruppeProsjekt/Program.cs" />
-      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="22" Column="37" />
+      <File FileName="gruppeProsjekt/wwwroot/index.html" />
       <File FileName="gruppeProsjekt/Controller/BestillingController.cs" />
-      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" />
+      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" Line="24" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,9 +14,8 @@
             <Node name="gruppeProsjekt" expanded="True">
               <Node name="Properties" expanded="True" />
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="style.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
+                <Node name="bestillinger.html" selected="True" />
               </Node>
             </Node>
           </Node>
