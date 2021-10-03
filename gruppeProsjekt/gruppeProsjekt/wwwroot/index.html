@@ -11,21 +11,23 @@
 </head>
 <body onload="hentStrekninger()">
 
-    <!-- Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 2%;">
-            <a style="margin-left:26.5%;" class="nav-link active" href="index.html">Ny bestilling</a>
-            <a href="index.html">
-                <div class="logo">
-                    <img src="tomCruise.png" href="index.html" style="width: 25%; height: 25%;">
-                </div>
-            </a>
-            <a class="nav-link" href="bestillinger.html">Mine bestillinger</a>
-    </nav>
-        
+    <!-- Meny bar-->
+    <div class="meny">
+        <a href="index.html">
+            <img src="tomCruise.png" style="width: 7%; height: auto; float: left;">
+        </a>
+        <ul>
+            <li><a href="index.html" style="text-decoration:none;">Ny bestilling</a></li>
+            <li><a href="bestillinger.html" style="text-decoration:none;">Mine bestillinger</a></li>
+            <li><a href="#kontaktOss" style="text-decoration:none;">Kontakt oss</a></li>
+        </ul>
+    </div>
+    <br><br><br><br>
+
     <!-- Bestilling skjema -->
     <form class="form-group hovedboks" id="frmBestill">
         <center>
-            <h2>Bestill reise</h2>
+            <h2>Bestill reise nå!</h2>
             <!-- Velg reise-->
             <input type="radio" name="tur" id="enVei" value=0 onclick="endreSkjema(this.value)" checked />
             <label for="enVei">En Vei</label>
@@ -48,7 +50,7 @@
         <!-- Kundeinfo -->
         <br>
         <h4>Kunde info</h4>
-        <input type="text" class="form-control" id="inpFornavn"  placeholder="Fornavn" required />
+        <input type="text" class="form-control" id="inpFornavn" placeholder="Fornavn" required />
         <input type="text" class="form-control" id="inpEtternavn" placeholder="Etternavn" required />
         <input type="email" class="form-control" id="inpEpost" placeholder="Epost" required />
         <input type="tel" class="form-control" id="inpTelefon" pattern="[4,9]{1}[0-9]{7}" placeholder="Telefon" required />
@@ -74,8 +76,20 @@
         </div>
     </div>
 
-    <script>
-        // dato frem i tid
+    <!-- Kontakt oss-->
+    <div id="kontaktOss">
+        <img src="tomCruise.png" style="width: 400px; height: auto; float: right; margin-top: 2%; margin-right: 20%;">
+
+        <h1>Kontakt oss</h1>
+
+        <p>Tlf nr: +47 911 55 962</p>
+        <p>Mail: t0mCruise@gmail.com</p>
+        <p>Facebook: TomCruise</p>
+        <p>Instagram: @t0mcruise</p>
+        <p>Snapchat: Tom-Cruise123</p>
+    </div>
+
+    <script>// dato frem i tid
         $("#velgDato").attr("min", currentDate());
 
         // form submit
@@ -106,7 +120,6 @@
                 // feil
                 alert("Det har skjedd en feil");
             });
-        }
-    </script>
+        }</script>
 </body>
 </html>

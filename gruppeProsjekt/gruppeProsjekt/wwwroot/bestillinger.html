@@ -8,39 +8,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
-<body onload="hentBestillinger(0)">
+<body onload="hentBestillinger()">
 
-    <!-- Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 2%;">
-        <a style="margin-left:27%;" class="nav-link" href="index.html">Ny bestilling</a>
+    <!-- Meny bar-->
+    <div class="meny">
         <a href="index.html">
-            <div class="logo">
-                <img src="tomCruise.png" href="index.html" style="width: 25%; height: 25%;">
-            </div>
+            <img src="tomCruise.png" style="width: 7%; height: auto; float: left;">
         </a>
-        <a class="nav-link active" href="bestillinger.html">Mine bestillinger</a>
-    </nav>
+        <ul>
+            <li><a href="index.html" style="text-decoration:none;">Ny bestilling</a></li>
+            <li><a href="bestillinger.html" style="text-decoration:none;">Mine bestillinger</a></li>
+            <li><a href="#kontaktOss" style="text-decoration:none;">Kontakt oss</a></li>
+        </ul>
+    </div>
+    <br><br><br><br><br>
 
     <!-- Overskrift -->
     <h3 style="color: white; text-align: center;">Alle bestillinger</h3>
 
-    <div class="wrapper">
+    <!-- Tabell med bestillinger -->
+    <table id="tabell" class="table table-striped" style="background-color: white; width: 80%; margin: auto; margin-top: 1em;">
+        <tr>
+            <th>ID</th>
+            <th>Fornavn</th>
+            <th>Etternavn</th>
+            <th>E-post</th>
+            <th>Telefon</th>
+            <th>Strekning</th>
+            <th>Avreise</th>
+            <th>Retur</th>
+            <th>Total pris</th>
+        </tr>
+    </table>
 
-        <!-- Sorter tabell -->
-        <select class="form-control" onchange="hentBestillinger(this.selectedIndex)">
-            <option>ID, stigende</option>
-            <option>ID, synkende</option>
-            <option>Avreisedato</option>
-            <option>Strekning, alfabetisk</option>
-            <option>Fornavn, alfabetisk</option>
-            <option>Etternavn, alfabetisk</option>
-        </select>
+    <!-- Kontakt oss-->
+    <div id="kontaktOss">
+        <img src="tomCruise.png" style="width: 400px; height: auto; float: right; margin-top: 2%; margin-right: 20%;">
 
-        <!-- Tabell med bestillinger -->
-        <table id="tabell" class="table table-striped" style="background-color: white; margin-top: 1em; width: 100%;"></table>
+        <h1>Kontakt oss</h1>
 
+        <p>Tlf nr: +47 911 55 962</p>
+        <p>Mail: t0mCruise@gmail.com</p>
+        <p>Facebook: TomCruise</p>
+        <p>Instagram: @t0mcruise</p>
+        <p>Snapchat: Tom-Cruise123</p>
     </div>
 
-    
 </body>
 </html>
