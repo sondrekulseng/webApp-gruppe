@@ -1,5 +1,15 @@
 ﻿// Main js file
 
+function validerOgHentbestillinger() {
+    const Fornavn = ValiderFornavn($(this.fornavn).val());
+    const Etternavn = validerEtternavn($(this.etternavn).val());
+    const Epost = validerEpost($(this.epost).val());
+    const Telefonnummer = validerTelefonnummer($(this.telefon).val());
+    if (Fornavn && Etternavn && Epost && Telefonnummer) {
+        hentBestillinger();
+    }
+
+}
 function visKvittering() {
     $.get("Bestilling/hentKvittering", function (data) {
         let totalPris = data.pris;
@@ -100,4 +110,5 @@ function hentBestillinger(sort) {
                                         </tr>`);
         }
     });
+    
 }
