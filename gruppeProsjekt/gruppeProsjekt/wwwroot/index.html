@@ -121,9 +121,9 @@
             }).done(function () {
                 // ingen feil, vis kvittering
                 visKvittering();
-            }).fail(function () {
-                // feil
-                alert("Det har skjedd en feil");
+            }).fail(function (xhr, status, error) {
+                // feil, vis feilmld
+                alert(xhr.responseText);
             });
         }</script>
 </body>

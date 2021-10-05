@@ -50,6 +50,7 @@ namespace gruppeProsjekt.Models
         }
 
         public int id { get; set; }
+
         [RegularExpression(@"[a-zA-ZæøåÆØÅ. \-]{2,20}")]
         public string fornavn { get; set; }
         [RegularExpression(@"[a-zA-ZæøåÆØÅ. \-]{2,20}")]

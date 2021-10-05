@@ -15,8 +15,6 @@ namespace gruppeProsjekt.Controller
         private DB _DB;
 
         private ILogger<BestillingController> _info;
-
-
         
         public BestillingController(DB db, ILogger<BestillingController> info)
         {
@@ -28,10 +26,8 @@ namespace gruppeProsjekt.Controller
         // lagre bestillinger
         public async Task<ActionResult> lagre(Bestill b) {
 
-            if (ModelState.IsValid) // Hvis regex er godkjent, så er modelllen valid 
+            if (ModelState.IsValid) // Hvis regex er godkjent, så er modellen godkjent
             {
-
-
                 Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
 
                 var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
@@ -46,16 +42,16 @@ namespace gruppeProsjekt.Controller
                 }
                 catch
                 {
-                    // feil
+                    // feil i database lagring
                     return BadRequest("Bestillingen kunne ikke lagres");
-
                 }
             }
-            else {
-
+            else
+            {
+                // input valideringsfeil
                 return BadRequest("Feil i inputvalidering");
                  
-                }
+             }
         }
 
         // hent alle bestillinger
