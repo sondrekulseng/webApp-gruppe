@@ -1,6 +1,7 @@
 ﻿using gruppeProsjekt.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,33 +11,51 @@ namespace gruppeProsjekt.Controller
     [Route("[controller]/[action]")]
     public class BestillingController : ControllerBase
     {
+
         private DB _DB;
+
+        private ILogger<BestillingController> _info;
+
+
         
-        public BestillingController(DB db)
+        public BestillingController(DB db, ILogger<BestillingController> info)
         {
             _DB = db;
+            _info = info;
         }
 
+        
         // lagre bestillinger
-        public async Task<bool> lagre(Bestill b)
-        {
-            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
+        public async Task<ActionResult> lagre(Bestill b) {
 
-            var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
-            nyBestill.strekningID = finnStrekningID;
+            if (ModelState.IsValid) // Hvis regex er godkjent, så er modelllen valid 
+            {
 
-            try
-            {
-                // lagre ny bestilling
-                _DB.Bestillinger.Add(nyBestill);
-                await _DB.SaveChangesAsync();
-                return true;
+
+                Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
+
+                var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
+                nyBestill.strekningID = finnStrekningID;
+
+                try
+                {
+                    // lagre ny bestilling
+                    _DB.Bestillinger.Add(nyBestill);
+                    await _DB.SaveChangesAsync();
+                    return Ok("Bestilling lagret");
+                }
+                catch
+                {
+                    // feil
+                    return BadRequest("Bestillingen kunne ikke lagres");
+
+                }
             }
-            catch
-            {
-                // feil
-                return false;
-            }
+            else {
+
+                return BadRequest("Feil i inputvalidering");
+                 
+                }
         }
 
         // hent alle bestillinger

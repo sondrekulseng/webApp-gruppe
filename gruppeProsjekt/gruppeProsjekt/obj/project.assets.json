@@ -1925,25 +1925,28 @@
     ]
   },
   "packageFolders": {
-    "/Users/sondrekulseng/.nuget/packages/": {}
+    "C:\\Users\\ahm60\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/gruppeProsjekt.csproj",
+      "projectUniqueName": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
       "projectName": "gruppeProsjekt",
-      "projectPath": "/Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/gruppeProsjekt.csproj",
-      "packagesPath": "/Users/sondrekulseng/.nuget/packages/",
-      "outputPath": "/Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/",
+      "projectPath": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\gruppeProsjekt.csproj",
+      "packagesPath": "C:\\Users\\ahm60\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahm60\\Documents\\Webapplikasjoner\\webApp-gruppe\\gruppeProsjekt\\gruppeProsjekt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sondrekulseng/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ahm60\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -1992,7 +1995,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
