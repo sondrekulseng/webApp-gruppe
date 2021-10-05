@@ -1,6 +1,6 @@
 ﻿using gruppeProsjekt.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,25 +17,31 @@ namespace gruppeProsjekt.Controller
             _DB = db;
         }
 
-        public bool lagre(Bestill b)
+        // lagre bestillinger
+        public async Task<bool> lagre(Bestill b)
         {
-            Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato.Date, b.strekningID);
             Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
 
             var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
             nyBestill.strekningID = finnStrekningID;
 
-            // lagre ny bestilling
-            _DB.Bestillinger.Add(nyBestill);
-            _DB.SaveChanges();
-
-            return true;
+            try
+            {
+                // lagre ny bestilling
+                _DB.Bestillinger.Add(nyBestill);
+                await _DB.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                // feil
+                return false;
+            }
         }
 
         // hent alle bestillinger
-        public List<Bestill> hentAlle(int sort)
+        public async Task<List<Bestill>> hentAlle(int sort)
         {
-
             var alle = _DB.Bestillinger.OrderBy(b => b.id);
 
             if (sort == 0)
@@ -71,39 +77,58 @@ namespace gruppeProsjekt.Controller
                 alle = _DB.Bestillinger.OrderBy(b => b.etternavn);
             }
 
-            return alle.Select(k => new Bestill
+            try
             {
-                id = k.id,
-                fornavn = k.fornavn,
-                etternavn = k.etternavn,
-                telefon = k.telefon,
-                epost = k.epost,
-                formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
-                formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
-                strekning = k.strekningID.strekning,
-                pris = k.strekningID.pris
-            }).ToList();
+                // async tolist
+                List<Bestill> bestillinger = await alle.Select(k => new Bestill
+                {
+                    id = k.id,
+                    fornavn = k.fornavn,
+                    etternavn = k.etternavn,
+                    telefon = k.telefon,
+                    epost = k.epost,
+                    formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
+                    formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
+                    strekning = k.strekningID.strekning,
+                    pris = k.strekningID.pris
+                }).ToListAsync();
 
-
+                return bestillinger;
+            }
+            catch
+            {
+                // feil
+                return null;
+            }
         }
 
         // hent kvittering (siste bestilling)
-        public Bestill hentKvittering()
+        public async Task<Bestill> hentKvittering()
         {
-            Bestill b = _DB.Bestillinger.Select(k => new Bestill
+            try
             {
-                id = k.id,
-                fornavn = k.fornavn,
-                etternavn = k.etternavn,
-                telefon = k.telefon,
-                epost = k.epost,
-                formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
-                formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
-                strekning = k.strekningID.strekning,
-                pris = k.strekningID.pris
-            }).OrderBy(b => b.id).Last();
+                // hent siste bestilling
+                Bestill b = await _DB.Bestillinger.Select(k => new Bestill
+                {
+                    id = k.id,
+                    fornavn = k.fornavn,
+                    etternavn = k.etternavn,
+                    telefon = k.telefon,
+                    epost = k.epost,
+                    formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
+                    formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
+                    strekning = k.strekningID.strekning,
+                    pris = k.strekningID.pris
+                }).OrderBy(b => b.id).LastAsync();
 
-            return b;
+                return b;
+            }
+            catch
+            {
+                // feil
+                return null;
+            }
+            
         }
     }
 }

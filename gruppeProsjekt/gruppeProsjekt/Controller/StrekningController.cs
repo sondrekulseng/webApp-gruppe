@@ -1,8 +1,7 @@
 ﻿using gruppeProsjekt.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace gruppeProsjekt.Controller
@@ -17,9 +16,19 @@ namespace gruppeProsjekt.Controller
             _DB = db;
         }
 
-        public List<Strekning> hent()
+        public async Task<List<Strekning>> hent()
         {
-            return _DB.Strekninger.ToList();
+            try
+            {
+                // returner strekninger
+                return await _DB.Strekninger.ToListAsync();
+            }
+            catch
+            {
+                // feil
+                return null;
+            }
+            
         }
     }
 }
