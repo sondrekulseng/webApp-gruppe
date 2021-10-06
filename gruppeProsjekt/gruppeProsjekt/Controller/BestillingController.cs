@@ -14,14 +14,13 @@ namespace gruppeProsjekt.Controller
 
         private DB _DB;
 
-        private ILogger<BestillingController> _info;
+        private ILogger<BestillingController> _log;
         
-        public BestillingController(DB db, ILogger<BestillingController> info)
+        public BestillingController(DB db, ILogger<BestillingController> log)
         {
             _DB = db;
-            _info = info;
+            _log = log;
         }
-
         
         // lagre bestillinger
         public async Task<ActionResult> lagre(Bestill b) {
@@ -38,17 +37,20 @@ namespace gruppeProsjekt.Controller
                     // lagre ny bestilling
                     _DB.Bestillinger.Add(nyBestill);
                     await _DB.SaveChangesAsync();
+                    _log.LogInformation("Bestilling lagret");
                     return Ok("Bestilling lagret");
                 }
                 catch
                 {
                     // feil i database lagring
+                    _log.LogInformation("Database feil. Kunne ikke lagre bestilling.");
                     return BadRequest("Bestillingen kunne ikke lagres");
                 }
             }
             else
             {
                 // input valideringsfeil
+                _log.LogInformation("Feil i inputvalidering");
                 return BadRequest("Feil i inputvalidering");
                  
              }
