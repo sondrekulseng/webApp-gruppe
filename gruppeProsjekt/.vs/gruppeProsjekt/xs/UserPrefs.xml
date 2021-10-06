@@ -4,10 +4,10 @@
       <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="63" Column="20" />
       <File FileName="gruppeProsjekt/Program.cs" />
       <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" />
-      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/index.html" />
       <File FileName="gruppeProsjekt/Controller/StrekningController.cs" />
-      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" Line="52" Column="41" />
-      <File FileName="gruppeProsjekt/Models/Bestilling.cs" Line="55" Column="44" />
+      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" />
+      <File FileName="gruppeProsjekt/Models/Bestilling.cs" />
       <File FileName="gruppeProsjekt/Models/DB.cs" />
       <File FileName="gruppeProsjekt/wwwroot/js/script.js" Line="1" Column="1" />
     </Files>
@@ -30,7 +30,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.gruppeProsjekt PreferredExecutionTarget="/Applications/Firefox Developer Edition.app" />
+  <MonoDevelop.Ide.ItemProperties.gruppeProsjekt PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
