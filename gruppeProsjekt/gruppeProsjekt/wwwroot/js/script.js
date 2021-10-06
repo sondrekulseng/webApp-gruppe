@@ -1,15 +1,16 @@
 ﻿// Main js file
 
-function validerOgHentbestillinger() {
-    const Fornavn = ValiderFornavn($(this.fornavn).val());
-    const Etternavn = validerEtternavn($(this.etternavn).val());
-    const Epost = validerEpost($(this.epost).val());
-    const Telefonnummer = validerTelefonnummer($(this.telefon).val());
+function sjekkOgHentbestillinger() {
+    const Fornavn = sjekkFornavn($(this.fornavn).val());
+    const Etternavn = sjekkEtternavn($(this.etternavn).val());
+    const Epost = sjekkEpost($(this.epost).val());
+    const Telefonnummer = sjekkTelefonnummer($(this.telefon).val());
     if (Fornavn && Etternavn && Epost && Telefonnummer) {
         hentBestillinger();
     }
-
 }
+
+
 function visKvittering() {
     $.get("Bestilling/hentKvittering", function (data) {
         let totalPris = data.pris;

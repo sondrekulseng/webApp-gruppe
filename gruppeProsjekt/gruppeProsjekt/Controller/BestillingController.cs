@@ -45,14 +45,14 @@ namespace gruppeProsjekt.Controller
                 {
                     // feil i database lagring
                     _log.LogInformation("Database feil. Kunne ikke lagre bestilling.");
-                    return BadRequest("Bestillingen kunne ikke lagres");
+                    return BadRequest("Database feil. Bestillingen kunne ikke lagres");
                 }
             }
             else
             {
                 // input valideringsfeil
                 _log.LogInformation("Feil i inputvalidering");
-                return BadRequest("Feil i inputvalidering");
+                return BadRequest("Bestillingen ble ikke lagret. Du har skrevet noe ugyldig!");
                  
              }
         }

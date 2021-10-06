@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <script src="js/validering.js"></script>
+    <script src="js/validerSkjema.js"></script>
 </head>
 <body onload="hentStrekninger()">
 
@@ -51,14 +51,15 @@
         <!-- Kundeinfo -->
         <br>
         <h4>Kunde info</h4>
-        <input type="text" class="form-control" id="inpFornavn" onchange="ValiderFornavn(this.value)" placeholder="Fornavn" required />
-        <span id="feilfornavn" style="color:red"></span>
-        <input type="text" class="form-control" id="inpEtternavn" onchange="validerEtternavn(this.value)"placeholder="Etternavn" required />
-        <span id="feiletternavn" style="color:red"></span>
-        <input type="email" class="form-control" id="inpEpost" onchange="validerEpost(this.value)" placeholder="Epost" required />
-        <span id="feilepost" style="color:red"></span>
-        <input type="tel" class="form-control" id="inpTelefon" onchange="validerTelefonnummer(this.value) "pattern="[4,9]{1}[0-9]{7}" placeholder="Telefon" required />
-        <span id="feiltlf" style="color:red"></span>
+        <input type="text" class="form-control" id="inpFornavn" onchange="sjekkFornavn(this.value)" placeholder="Fornavn" required />
+        <span id="spanFornavn" style="color:red"></span>
+        <input type="text" class="form-control" id="inpEtternavn" onchange="sjekkEtternavn(this.value)"placeholder="Etternavn" required />
+        <span id="spanEtternavn" style="color:red"></span>
+        <input type="email" class="form-control" id="inpEpost" onchange="sjekkEpost(this.value)" placeholder="Epost" required />
+        <span id="spanEpost" style="color:red"></span>
+        <input type="tel" class="form-control" id="inpTelefon" onchange="sjekkTelefon(this.value)" placeholder="Telefon" required />
+        <span id="spanTelefon" style="color:red"></span>
+        <div class="alert alert-danger" id="divServerErr"></div>
         <br>
         <center><button type="submit" class="btn btn-primary">Send bestilling</button></center>
     </form>
@@ -119,18 +120,21 @@
             };
 
             $.post("Bestilling/lagre", bestilling, function () {
+                // send bestilling til server
+            }).done(function () {
+                // ingen feil, vis kvittering
                 $("#inpFornavn").val("");
                 $("#inpEtternavn").val("");
                 $("#inpEpost").val("");
                 $("#inpTelefon").val("");
                 $("#velgDato").val("");
                 $("#velgReturDato").val("");
-            }).done(function () {
-                // ingen feil, vis kvittering
+                $("#divServerErr").css("display", "none");
                 visKvittering();
             }).fail(function (xhr, status, error) {
                 // feil, vis feilmld
-                alert(xhr.responseText);
+                $("#divServerErr").css("display", "block");
+                $("#divServerErr").html(xhr.responseText)
             });
         }</script>
 </body>
