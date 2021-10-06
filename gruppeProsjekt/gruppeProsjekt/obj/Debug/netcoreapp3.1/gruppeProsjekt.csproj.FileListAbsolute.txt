@@ -442,6 +442,13 @@ C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppePro
 C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.dll
 C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.pdb
 C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.genruntimeconfig.cache
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.dll
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Extensions.Logging.dll
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Extensions.Logging.File.dll
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Formatting.Compact.dll
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Sinks.Async.dll
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Sinks.File.dll
+/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Sinks.RollingFile.dll
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/gruppeProsjekt.deps.json
@@ -507,6 +514,7 @@ C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppePro
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.csproj.AssemblyReference.cache
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.GeneratedMSBuildEditorConfig.editorconfig
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.AssemblyInfoInputs.cache
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.AssemblyInfo.cs
@@ -520,11 +528,3 @@ C:/Users/ahm60/Documents/Webapplikasjoner/webApp-gruppe/gruppeProsjekt/gruppePro
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.dll
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.pdb
 /Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.genruntimeconfig.cache
-/Users/sondrekulseng/Documents/GitHub/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/obj/Debug/netcoreapp3.1/gruppeProsjekt.csproj.AssemblyReference.cache
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.dll
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Extensions.Logging.dll
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Extensions.Logging.File.dll
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Formatting.Compact.dll
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Sinks.Async.dll
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Sinks.File.dll
-/Users/danitran/Desktop/Porsjekt/webApp-gruppe/gruppeProsjekt/gruppeProsjekt/bin/Debug/netcoreapp3.1/Serilog.Sinks.RollingFile.dll
