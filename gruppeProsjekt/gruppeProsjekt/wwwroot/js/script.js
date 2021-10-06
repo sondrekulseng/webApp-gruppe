@@ -67,7 +67,6 @@ function currentDate() {
 
 function hentStrekninger() {
     $.get("Strekning/hent", function (data) {
-        console.log(data);
         for (let i = 0; i < data.length; i++) {
             $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
         }
@@ -89,7 +88,6 @@ function hentBestillinger(sort) {
 
     // hent bestillinger fra database
     $.get(`Bestilling/hentAlle?sort=${sort}`, function (data) {
-        console.log(data);
         for (var i = 0; i < data.length; i++) {
             let returDato = "Ingen retur";
             let totalPris = data[i].pris;
