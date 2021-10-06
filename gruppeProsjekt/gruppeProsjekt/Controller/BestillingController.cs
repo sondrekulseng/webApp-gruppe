@@ -1,5 +1,7 @@
 ﻿using gruppeProsjekt.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,32 +12,54 @@ namespace gruppeProsjekt.Controller
     [Route("[controller]/[action]")]
     public class BestillingController : ControllerBase
     {
+
         private DB _DB;
+
+        private ILogger<BestillingController> _log;
         
-        public BestillingController(DB db)
+        public BestillingController(DB db, ILogger<BestillingController> log)
         {
             _DB = db;
+            _log = log;
         }
+        
+        // lagre bestillinger
+        public async Task<ActionResult> lagre(Bestill b) {
 
-        public bool lagre(Bestill b)
-        {
-            Bestill bestill = new Bestill(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato.Date, b.strekningID);
-            Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
+            if (ModelState.IsValid) // Hvis regex er godkjent, så er modellen godkjent
+            {
+                Bestilling nyBestill = new Bestilling(b.fornavn, b.etternavn, b.epost, b.telefon, b.avreiseDato.Date, b.returDato);
 
-            var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
-            nyBestill.strekningID = finnStrekningID;
+                var finnStrekningID = _DB.Strekninger.Find(b.strekningID);
+                nyBestill.strekningID = finnStrekningID;
 
-            // lagre ny bestilling
-            _DB.Bestillinger.Add(nyBestill);
-            _DB.SaveChanges();
-
-            return true;
+                try
+                {
+                    // lagre ny bestilling
+                    _DB.Bestillinger.Add(nyBestill);
+                    await _DB.SaveChangesAsync();
+                    _log.LogInformation("Bestilling lagret");
+                    return Ok("Bestilling lagret");
+                }
+                catch
+                {
+                    // feil i database lagring
+                    _log.LogInformation("Database feil. Kunne ikke lagre bestilling.");
+                    return BadRequest("Bestillingen kunne ikke lagres");
+                }
+            }
+            else
+            {
+                // input valideringsfeil
+                _log.LogInformation("Feil i inputvalidering");
+                return BadRequest("Feil i inputvalidering");
+                 
+             }
         }
 
         // hent alle bestillinger
-        public List<Bestill> hentAlle(int sort)
+        public async Task<List<Bestill>> hentAlle(int sort)
         {
-
             var alle = _DB.Bestillinger.OrderBy(b => b.id);
 
             if (sort == 0)
@@ -71,39 +95,58 @@ namespace gruppeProsjekt.Controller
                 alle = _DB.Bestillinger.OrderBy(b => b.etternavn);
             }
 
-            return alle.Select(k => new Bestill
+            try
             {
-                id = k.id,
-                fornavn = k.fornavn,
-                etternavn = k.etternavn,
-                telefon = k.telefon,
-                epost = k.epost,
-                formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
-                formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
-                strekning = k.strekningID.strekning,
-                pris = k.strekningID.pris
-            }).ToList();
+                // async tolist
+                List<Bestill> bestillinger = await alle.Select(k => new Bestill
+                {
+                    id = k.id,
+                    fornavn = k.fornavn,
+                    etternavn = k.etternavn,
+                    telefon = k.telefon,
+                    epost = k.epost,
+                    formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
+                    formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
+                    strekning = k.strekningID.strekning,
+                    pris = k.strekningID.pris
+                }).ToListAsync();
 
-
+                return bestillinger;
+            }
+            catch
+            {
+                // feil
+                return null;
+            }
         }
 
         // hent kvittering (siste bestilling)
-        public Bestill hentKvittering()
+        public async Task<Bestill> hentKvittering()
         {
-            Bestill b = _DB.Bestillinger.Select(k => new Bestill
+            try
             {
-                id = k.id,
-                fornavn = k.fornavn,
-                etternavn = k.etternavn,
-                telefon = k.telefon,
-                epost = k.epost,
-                formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
-                formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
-                strekning = k.strekningID.strekning,
-                pris = k.strekningID.pris
-            }).OrderBy(b => b.id).Last();
+                // hent siste bestilling
+                Bestill b = await _DB.Bestillinger.Select(k => new Bestill
+                {
+                    id = k.id,
+                    fornavn = k.fornavn,
+                    etternavn = k.etternavn,
+                    telefon = k.telefon,
+                    epost = k.epost,
+                    formatAvreise = k.avreiseDato.ToString("dd.MM.yyyy"),
+                    formatRetur = k.returDato.Date.ToString("dd.MM.yyyy"),
+                    strekning = k.strekningID.strekning,
+                    pris = k.strekningID.pris
+                }).OrderBy(b => b.id).LastAsync();
 
-            return b;
+                return b;
+            }
+            catch
+            {
+                // feil
+                return null;
+            }
+            
         }
     }
 }

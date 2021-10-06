@@ -101,13 +101,20 @@
         document.getElementById("frmBestill").onsubmit = function (evt) {
             evt.preventDefault();
 
+            let returDato = $("#velgReturDato").val();
+
+            if (!returDato) {
+                // dato kan ikke være null i db. Hvis ingen retur sett denne verdien.
+                returDato = "0001-01-01 00:00:00";
+            }
+
             const bestilling = {
                 fornavn: $("#inpFornavn").val(),
                 etternavn: $("#inpEtternavn").val(),
                 epost: $("#inpEpost").val(),
                 telefon: $("#inpTelefon").val(),
                 avreiseDato: $("#velgDato").val(),
-                returDato: $("#velgReturDato").val(),
+                returDato: returDato,
                 strekningID: document.getElementById("velgStrekning").selectedIndex
             };
 
@@ -121,9 +128,9 @@
             }).done(function () {
                 // ingen feil, vis kvittering
                 visKvittering();
-            }).fail(function () {
-                // feil
-                alert("Det har skjedd en feil");
+            }).fail(function (xhr, status, error) {
+                // feil, vis feilmld
+                alert(xhr.responseText);
             });
         }</script>
 </body>
