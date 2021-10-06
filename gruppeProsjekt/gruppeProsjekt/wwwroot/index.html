@@ -3,54 +3,43 @@
 <head>
     <meta charset="utf-8" />
     <title>Bestill</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        body {
-            margin: auto;
-            width: 60%;
-            margin-top: 1em;
-            background-image: url('http://cdn.cnn.com/cnnnext/dam/assets/210504130820-msc-magnifica.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        .form-control {
-            margin-bottom: 0.5em;
-        }
-
-        .hovedboks {
-            background-color: #000;
-            margin: auto;
-            padding: 1.5em;
-            opacity: 0.9;
-            color: white;
-            width: 60%;
-        }
-
-        table {
-            margin-top: 1em;
-        }
-
-        #divRetur {
-            display: none;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/validering.js"></script>
 </head>
-<body onload="hentBestillinger()">
-    <h1 style="text-align: center; color: white;">EasyCruise</h1>
+<body onload="hentStrekninger()">
 
+    <!-- Meny bar-->
+    <div class="meny">
+        <a href="index.html">
+            <img src="tomCruise.png" style="width: 7%; height: auto; float: left;">
+        </a>
+        <ul>
+            <li><a href="index.html" class="active" style="text-decoration:none;">Ny bestilling</a></li>
+            <li><a href="bestillinger.html" style="text-decoration:none;">Mine bestillinger</a></li>
+            <li><a href="#kontaktOss" style="text-decoration:none;">Kontakt oss</a></li>
+        </ul>
+    </div>
+    <br><br><br><br><br><br>
+
+    <!-- Bestilling skjema -->
     <form class="form-group hovedboks" id="frmBestill">
-        <h3>Bestill reise</h3>
-        <!-- Velg reise-->
-        <input type="radio" name="tur" id="enVei" value=0 onclick="endreSkjema(this.value)" checked />
-        <label for="enVei">En Vei</label>
-        <input type="radio" name="tur" id="retur" value=1 onclick="endreSkjema(this.value)" />
-        <label for="retur">Tur/Retur</label>
+        <center>
+            <h2>Bestill reise nå!</h2>
+            <!-- Velg reise-->
+            <input type="radio" name="tur" id="enVei" value=0 onclick="endreSkjema(this.value)" checked />
+            <label for="enVei">En Vei</label>
+            <input type="radio" name="tur" id="retur" value=1 onclick="endreSkjema(this.value)" />
+            <label for="retur">Tur/Retur</label>
+        </center>
+        <br>
         <!-- Velg strekning -->
         <h4>Velg strekning</h4>
         <select id="velgStrekning" class="form-control"></select>
+        <br>
         <!-- Velg avreisedato -->
         <h4>Avreise</h4>
         <input type="date" class="form-control" id="velgDato" onchange="validateRetur(this.value)" required />
@@ -60,85 +49,55 @@
             <input type="date" class="form-control" id="velgReturDato" disabled />
         </div>
         <!-- Kundeinfo -->
+        <br>
         <h4>Kunde info</h4>
-        <input type="text" class="form-control" id="inpFornavn" placeholder="Fornavn" required />
-        <input type="text" class="form-control" id="inpEtternavn" placeholder="Etternavn" required />
-        <input type="email" class="form-control" id="inpEpost" placeholder="Epost" required />
-        <input type="tel" class="form-control" id="inpTelefon" placeholder="Telefon" required />
-        <div class="alert alert-info" id="frmMsg" style="display: none;"></div>
-        <button type="submit" class="btn btn-primary">Send bestilling</button>
+        <input type="text" class="form-control" id="inpFornavn" onchange="ValiderFornavn(this.value)" placeholder="Fornavn" required />
+        <span id="feilfornavn" style="color:red"></span>
+        <input type="text" class="form-control" id="inpEtternavn" onchange="validerEtternavn(this.value)"placeholder="Etternavn" required />
+        <span id="feiletternavn" style="color:red"></span>
+        <input type="email" class="form-control" id="inpEpost" onchange="validerEpost(this.value)" placeholder="Epost" required />
+        <span id="feilepost" style="color:red"></span>
+        <input type="tel" class="form-control" id="inpTelefon" onchange="validerTelefonnummer(this.value) "pattern="[4,9]{1}[0-9]{7}" placeholder="Telefon" required />
+        <span id="feiltlf" style="color:red"></span>
+        <br>
+        <center><button type="submit" class="btn btn-primary">Send bestilling</button></center>
     </form>
-    <table id="tabell" class="table" style="background-color: white">
-        <tr>
-            <th>Fornavn</th>
-            <th>Etternavn</th>
-            <th>E-post</th>
-            <th>Telefon</th>
-            <th>Strekning</th>
-            <th>Avreise</th>
-            <th>Retur</th>
-            <th>Total pris</th>
-        </tr>
-    </table>
-    <script>
-        function endreSkjema(val) {
-            if (val == 0) {
-                // en vei
-                $("#divRetur").css("display", "none");
-            } else {
-                $("#divRetur").css("display", "block");
-            }
-        }
 
-        function validateRetur(avreiseDato) {
-            $("#velgReturDato").attr("min", avreiseDato);
-            $("#velgReturDato").prop("disabled", false);
-        }
+    <!-- Modal for kvittering -->
+    <div class="modal fade" id="modalContainer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#modalContainer').modal('hide');">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer" id="modalFooter">
+                    <button type="button" class="btn btn-secondary" onclick="$('#modalContainer').modal('hide');">Lukk</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        function currentDate() {
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            var yyyy = today.getFullYear();
+    <!-- Kontakt oss-->
+    <div id="kontaktOss">
+        <img src="tomCruise.png" style="width: 400px; height: auto; float: right; margin-top: 2%; margin-right: 20%;">
 
-            today = yyyy + '-' + mm + '-' + dd;
+        <h1>Kontakt oss</h1>
 
-            return today;
-        }
+        <p>Tlf nr: +47 911 55 962</p>
+        <p>Mail: t0mCruise@gmail.com</p>
+        <p>Facebook: TomCruise</p>
+        <p>Instagram: @t0mcruise</p>
+        <p>Snapchat: Tom-Cruise123</p>
+    </div>
 
+    <script>// dato frem i tid
         $("#velgDato").attr("min", currentDate());
 
-        $.get("Strekning/hent", function (data) {
-            console.log(data);
-            for (let i = 0; i < data.length; i++) {
-                $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
-            }
-        });
-
-        function hentBestillinger() {
-            $.get("Bestilling/hentAlle", function (data) {
-                console.log(data);
-                for (var i = 0; i < data.length; i++) {
-                    let returDato = "Ingen retur";
-                    let totalPris = data[i].pris;
-                    if (data[i].formatRetur != "01.01.0001") {
-                        returDato = data[i].formatRetur;
-                        totalPris = totalPris * 2;
-                    }
-                    $("#tabell").append(`<tr>
-                                            <td>${data[i].fornavn}</td>
-                                            <td>${data[i].etternavn}</td>
-                                            <td>${data[i].epost}</td>
-                                            <td>${data[i].telefon}</td>
-                                            <td>${data[i].strekning}, ${data[i].pris} kr</td>
-                                            <td>${data[i].formatAvreise}</td>
-                                            <td>${returDato}</td>
-                                            <td>${totalPris} kr</td>
-                                        </tr>`);
-                }
-            });
-        }
-
+        // form submit
         document.getElementById("frmBestill").onsubmit = function (evt) {
             evt.preventDefault();
 
@@ -159,9 +118,12 @@
                 $("#inpTelefon").val("");
                 $("#velgDato").val("");
                 $("#velgReturDato").val("");
-                $("#frmMsg").css("display", "block");
-                $("#frmMsg").html("Bestilling lagret");
-                hentBestillinger();
+            }).done(function () {
+                // ingen feil, vis kvittering
+                visKvittering();
+            }).fail(function () {
+                // feil
+                alert("Det har skjedd en feil");
             });
         }</script>
 </body>

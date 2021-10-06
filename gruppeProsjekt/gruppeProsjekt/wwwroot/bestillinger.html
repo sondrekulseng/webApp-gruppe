@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bestill</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body onload="hentBestillinger()">
+
+    <!-- Meny bar-->
+    <div class="meny">
+        <a href="index.html">
+            <img src="tomCruise.png" style="width: 7%; height: auto; float: left;">
+        </a>
+        <ul>
+            <li><a href="index.html" style="text-decoration:none;">Ny bestilling</a></li>
+            <li><a href="bestillinger.html" style="text-decoration:none;" class="active">Mine bestillinger</a></li>
+            <li><a href="#kontaktOss" style="text-decoration:none;">Kontakt oss</a></li>
+        </ul>
+    </div>
+    <br><br><br><br><br>
+
+    <div class="wrapper">
+
+        <!-- Sorter tabell -->
+        <h3>Sorter tabell</h3>
+        <select class="form-control" onchange="hentBestillinger(this.selectedIndex)">
+            <option>OrdreNr, stigende</option>
+            <option>OrdreNr, synkende</option>
+            <option>Avreisedato</option>
+            <option>Strekning, alfabetisk</option>
+            <option>Fornavn, alfabetisk</option>
+            <option>Etternavn, alfabetisk</option>
+        </select>
+
+        <!-- Tabell med bestillinger -->
+        <table id="tabell" class="table table-striped" style="background-color: white; margin-top: 1em; width: 100%;"></table>
+
+    </div>
+
+    <!-- Kontakt oss-->
+    <div id="kontaktOss">
+        <img src="tomCruise.png" style="width: 400px; height: auto; float: right; margin-top: 2%; margin-right: 20%;">
+
+        <h1>Kontakt oss</h1>
+
+        <p>Tlf nr: +47 911 55 962</p>
+        <p>Mail: t0mCruise@gmail.com</p>
+        <p>Facebook: TomCruise</p>
+        <p>Instagram: @t0mcruise</p>
+        <p>Snapchat: Tom-Cruise123</p>
+    </div>
+
+</body>
+</html>
