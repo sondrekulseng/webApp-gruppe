@@ -51,13 +51,13 @@
         <!-- Kundeinfo -->
         <br>
         <h4>Kunde info</h4>
-        <input type="text" class="form-control" id="inpFornavn" onchange="sjekkFornavn(this.value)" placeholder="Fornavn" required />
+        <input type="text" class="form-control" id="inpFornavn" oninput="sjekkFornavn(this.value)" placeholder="Fornavn" required />
         <span id="spanFornavn" style="color:red"></span>
-        <input type="text" class="form-control" id="inpEtternavn" onchange="sjekkEtternavn(this.value)"placeholder="Etternavn" required />
+        <input type="text" class="form-control" id="inpEtternavn" oninput="sjekkEtternavn(this.value)"placeholder="Etternavn" required />
         <span id="spanEtternavn" style="color:red"></span>
-        <input type="email" class="form-control" id="inpEpost" onchange="sjekkEpost(this.value)" placeholder="Epost" required />
+        <input type="email" class="form-control" id="inpEpost" oninput="sjekkEpost(this.value)" placeholder="Epost" required />
         <span id="spanEpost" style="color:red"></span>
-        <input type="tel" class="form-control" id="inpTelefon" onchange="sjekkTelefon(this.value)" placeholder="Telefon" required />
+        <input type="tel" class="form-control" id="inpTelefon" oninput="sjekkTelefon(this.value)" placeholder="Telefon" required />
         <span id="spanTelefon" style="color:red"></span>
         <div class="alert alert-danger" id="divServerErr"></div>
         <br>
