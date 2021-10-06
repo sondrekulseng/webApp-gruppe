@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{E5DE65C4-0233-4ED6-B492-C0DD0F66A0D9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/wwwroot/js/script.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/logs/bestill_log-20211006.txt">
     <Files>
-      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="63" Column="20" />
-      <File FileName="gruppeProsjekt/Program.cs" />
-      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" />
-      <File FileName="gruppeProsjekt/wwwroot/index.html" />
+      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="26" Column="38" />
+      <File FileName="gruppeProsjekt/Program.cs" Line="10" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="119" Column="15" />
       <File FileName="gruppeProsjekt/Controller/StrekningController.cs" />
-      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" />
-      <File FileName="gruppeProsjekt/Models/Bestilling.cs" />
-      <File FileName="gruppeProsjekt/Models/DB.cs" />
-      <File FileName="gruppeProsjekt/wwwroot/js/script.js" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/Controller/BestillingController.cs" Line="27" Column="59" />
+      <File FileName="gruppeProsjekt/Models/Bestilling.cs" Line="10" Column="10" />
+      <File FileName="gruppeProsjekt/Models/DB.cs" Line="1" Column="1" />
+      <File FileName="gruppeProsjekt/wwwroot/js/script.js" Line="90" Column="64" />
+      <File FileName="gruppeProsjekt/Startup.cs" Line="39" Column="63" />
+      <File FileName="gruppeProsjekt/logs/bestill_log-20211006.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,12 +19,13 @@
           <Node name="gruppeProsjekt" expanded="True">
             <Node name="gruppeProsjekt" expanded="True">
               <Node name="Controller" expanded="True" />
+              <Node name="logs" expanded="True">
+                <Node name="bestill_log-20211006.txt" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="js" expanded="True">
-                  <Node name="script.js" selected="True" />
-                </Node>
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -30,7 +33,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.gruppeProsjekt PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.gruppeProsjekt PreferredExecutionTarget="/Applications/Firefox Developer Edition.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -64,31 +64,26 @@ namespace gruppeProsjekt.Controller
 
             if (sort == 0)
             {
-                // ID stigende
-                alle = _DB.Bestillinger.OrderBy(b => b.id);
-            }
-            else if (sort == 1)
-            {
-                // ID synkende
+                // Nylig lagt til
                 alle = _DB.Bestillinger.OrderByDescending(b => b.id);
             }
-            else if (sort == 2)
+            else if (sort == 1)
             {
                 // Avreise dato
                 alle = _DB.Bestillinger.OrderBy(b => b.avreiseDato);
             }
-            else if (sort == 3)
+            else if (sort == 2)
             {
                 // Strekning alfabetisk
                 alle = _DB.Bestillinger.OrderBy(b => b.strekningID.strekning);
             }
-            else if (sort == 4)
+            else if (sort == 3)
             {
 
                 // Fornavn alfabetisk
                 alle = _DB.Bestillinger.OrderBy(b => b.fornavn);
             }
-            else if (sort == 5)
+            else if (sort == 4)
             {
 
                 // Etternavn alfabetisk
