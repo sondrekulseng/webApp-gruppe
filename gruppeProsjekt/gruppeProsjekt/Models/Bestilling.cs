@@ -48,12 +48,21 @@ namespace gruppeProsjekt.Models
 
         public int id { get; set; }
 
+        [Required]
+        [StringLength(20, MinimumLength = 2)]
         [RegularExpression(@"^[a-zA-ZæøåÆØÅ]+$")]
         public string fornavn { get; set; }
+
+        [Required]
+        [StringLength(20, MinimumLength = 2)]
         [RegularExpression(@"^[a-zA-ZæøåÆØÅ]+$")]
         public string etternavn { get; set; }
+        
+        [Required]
         [RegularExpression(@"^[a-zA-Z0-9æøåÆØÅ_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")]
         public string epost { get; set; }
+
+        [Required]
         [RegularExpression(@"^[0-9]+$")]
         public string telefon { get; set; }
         public DateTime avreiseDato { get; set; }
