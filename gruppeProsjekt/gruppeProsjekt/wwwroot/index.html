@@ -57,7 +57,7 @@
         <span id="spanEtternavn" style="color:red"></span>
         <input type="email" class="form-control" id="inpEpost" oninput="sjekkEpost(this.value)" placeholder="Epost" required />
         <span id="spanEpost" style="color:red"></span>
-        <input type="tel" class="form-control" id="inpTelefon" oninput="sjekkTelefon(this.value)" placeholder="Telefon" required />
+        <input type="tel" class="form-control" id="inpTelefon" oninput="sjekkTelefon(this.value)" pattern="[4,9]{1}[0-9]{7}" placeholder="Telefon" required />
         <span id="spanTelefon" style="color:red"></span>
         <div class="alert alert-danger" id="divServerErr"></div>
         <br>
