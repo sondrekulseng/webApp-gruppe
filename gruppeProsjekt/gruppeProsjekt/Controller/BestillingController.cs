@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -44,14 +45,14 @@ namespace gruppeProsjekt.Controller
                 {
                     // feil i database lagring
                     _log.LogInformation("Database feil. Kunne ikke lagre bestilling.");
-                    return BadRequest("Bestillingen kunne ikke lagres");
+                    return BadRequest("Database feil. Bestillingen kunne ikke lagres");
                 }
             }
             else
             {
                 // input valideringsfeil
                 _log.LogInformation("Feil i inputvalidering");
-                return BadRequest("Feil i inputvalidering");
+                return BadRequest("Bestillingen ble ikke lagret. Du har skrevet noe ugyldig!");
                  
              }
         }
@@ -63,31 +64,26 @@ namespace gruppeProsjekt.Controller
 
             if (sort == 0)
             {
-                // ID stigende
-                alle = _DB.Bestillinger.OrderBy(b => b.id);
-            }
-            else if (sort == 1)
-            {
-                // ID synkende
+                // Nylig lagt til
                 alle = _DB.Bestillinger.OrderByDescending(b => b.id);
             }
-            else if (sort == 2)
+            else if (sort == 1)
             {
                 // Avreise dato
                 alle = _DB.Bestillinger.OrderBy(b => b.avreiseDato);
             }
-            else if (sort == 3)
+            else if (sort == 2)
             {
                 // Strekning alfabetisk
                 alle = _DB.Bestillinger.OrderBy(b => b.strekningID.strekning);
             }
-            else if (sort == 4)
+            else if (sort == 3)
             {
 
                 // Fornavn alfabetisk
                 alle = _DB.Bestillinger.OrderBy(b => b.fornavn);
             }
-            else if (sort == 5)
+            else if (sort == 4)
             {
 
                 // Etternavn alfabetisk

@@ -1,15 +1,16 @@
 ﻿// Main js file
 
-function validerOgHentbestillinger() {
-    const Fornavn = ValiderFornavn($(this.fornavn).val());
-    const Etternavn = validerEtternavn($(this.etternavn).val());
-    const Epost = validerEpost($(this.epost).val());
-    const Telefonnummer = validerTelefonnummer($(this.telefon).val());
+function sjekkOgHentbestillinger() {
+    const Fornavn = sjekkFornavn($(this.fornavn).val());
+    const Etternavn = sjekkEtternavn($(this.etternavn).val());
+    const Epost = sjekkEpost($(this.epost).val());
+    const Telefonnummer = sjekkTelefonnummer($(this.telefon).val());
     if (Fornavn && Etternavn && Epost && Telefonnummer) {
         hentBestillinger();
     }
-
 }
+
+
 function visKvittering() {
     $.get("Bestilling/hentKvittering", function (data) {
         let totalPris = data.pris;
@@ -67,7 +68,6 @@ function currentDate() {
 
 function hentStrekninger() {
     $.get("Strekning/hent", function (data) {
-        console.log(data);
         for (let i = 0; i < data.length; i++) {
             $("#velgStrekning").append(`<option>${data[i].strekning}, ${data[i].pris} kr</option>`);
         }
@@ -76,7 +76,7 @@ function hentStrekninger() {
 
 function hentBestillinger(sort) {
     $("#tabell").html(`<tr>
-                        <th>OrdreNr</th>
+                        <th>ID</th>
                         <th>Fornavn</th>
                         <th>Etternavn</th>
                         <th>E-post</th>
@@ -89,7 +89,6 @@ function hentBestillinger(sort) {
 
     // hent bestillinger fra database
     $.get(`Bestilling/hentAlle?sort=${sort}`, function (data) {
-        console.log(data);
         for (var i = 0; i < data.length; i++) {
             let returDato = "Ingen retur";
             let totalPris = data[i].pris;

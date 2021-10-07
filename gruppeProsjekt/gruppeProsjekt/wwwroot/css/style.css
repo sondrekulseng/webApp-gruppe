@@ -15,7 +15,6 @@ body {
 }
 
 .hovedboks {
-    opacity: 0.8;
     color: white;
     width: 60%;
     background-color: #000;
@@ -25,7 +24,6 @@ body {
     border-top-left-radius: 45px;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
-    height: 700px;
 }
 
 #tabell {
@@ -122,4 +120,9 @@ h1 {
     text-align: left;
     margin-left: 20%;
     font-size: 20px;
+}
+
+#divServerErr {
+    display: none;
+    font-weight: bold;
 }
