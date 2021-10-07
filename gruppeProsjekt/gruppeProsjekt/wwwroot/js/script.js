@@ -55,6 +55,7 @@ function validateRetur(avreiseDato) {
     $("#velgReturDato").prop("disabled", false);
 }
 
+// dagens dato, hentet fra: https://stackoverflow.com/a/4929629
 function currentDate() {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
