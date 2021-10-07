@@ -53,7 +53,7 @@
         <h4>Kunde info</h4>
         <input type="text" class="form-control" id="inpFornavn" oninput="sjekkFornavn(this.value)" placeholder="Fornavn" required />
         <span id="spanFornavn" style="color:red"></span>
-        <input type="text" class="form-control" id="inpEtternavn" oninput="sjekkEtternavn(this.value)"placeholder="Etternavn" required />
+        <input type="text" class="form-control" id="inpEtternavn" oninput="sjekkEtternavn(this.value)" placeholder="Etternavn" required />
         <span id="spanEtternavn" style="color:red"></span>
         <input type="email" class="form-control" id="inpEpost" oninput="sjekkEpost(this.value)" placeholder="Epost" required />
         <span id="spanEpost" style="color:red"></span>
@@ -64,7 +64,7 @@
         <center><button type="submit" class="btn btn-primary">Send bestilling</button></center>
     </form>
 
-    <!-- Modal for kvittering -->
+    <!-- Modal for kvittering, hentet fra https://getbootstrap.com/docs/4.0/components/modal/ -->
     <div class="modal fade" id="modalContainer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -95,7 +95,8 @@
         <p>Snapchat: Tom-Cruise123</p>
     </div>
 
-    <script>// dato frem i tid
+    <script>
+        // avreisedato må være idag eller frem i tid
         $("#velgDato").attr("min", currentDate());
 
         // form submit
