@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{E5DE65C4-0233-4ED6-B492-C0DD0F66A0D9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/logs/bestill_log-20211007.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="gruppeProsjekt/wwwroot/index.html">
     <Files>
-      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="26" Column="38" />
+      <File FileName="gruppeProsjekt/wwwroot/css/style.css" Line="126" Column="19" />
       <File FileName="gruppeProsjekt/Program.cs" />
       <File FileName="gruppeProsjekt/wwwroot/bestillinger.html" />
-      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="44" Column="25" />
+      <File FileName="gruppeProsjekt/wwwroot/index.html" Line="49" Column="90" />
       <File FileName="gruppeProsjekt/Controller/StrekningController.cs" />
       <File FileName="gruppeProsjekt/Controller/BestillingController.cs" />
       <File FileName="gruppeProsjekt/Models/Bestilling.cs" />
@@ -19,13 +19,12 @@
           <Node name="gruppeProsjekt" expanded="True">
             <Node name="gruppeProsjekt" expanded="True">
               <Node name="Controller" expanded="True" />
-              <Node name="logs" expanded="True">
-                <Node name="bestill_log-20211007.txt" selected="True" />
-              </Node>
+              <Node name="logs" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
                 <Node name="js" expanded="True" />
+                <Node name="index.html" selected="True" />
               </Node>
             </Node>
           </Node>
