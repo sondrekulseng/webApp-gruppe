@@ -1,12 +1,15 @@
-Gruppeoppgave i webapplikasjoner, del 1
+<img src="https://drive.google.com/thumbnail?id=10MLLfi0yYpP0EZF3M7xVTN2Byc3pCZAm" alt="Logo" width="120"/>
 
-Frontend teknologier:
+# Gruppeoppgave i webapplikasjoner
+
+## Frontend:
   - HTML, CSS og JavaScript
   - Bruker jQuery (JS bibliotek) for å kommunisere med backend via. POST og GET.
   - Bootstrap (CSS bibliotek) brukes for å designe deler av siden.
 
-Backend teknologier:
+## Backend:
   - C# ASP.NET
   - sqllite database
 
-NB: I noen tilfeller når man starter programmet for første gang så kan serveren produsere en 500 error. Løsningen er da å restarte programmet.
+## Hvordan kjøre prosjektet:
+Clone eller last ned prosjektet og kjør i Microsoft Visual Studio. 
